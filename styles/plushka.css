@@ -1,21 +1,51 @@
-.plushka{
+@font-face{
+    font-family: "Firasansmedium";
+    src: url("../fonts/Firasansmedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
+@font-face{
+    font-family: "Firasansregular";
+    src: url("../fonts/Firasansregular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.plushka{
+    width: 809px;
+    border: 1px solid #B2D6BB;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .plushka_img{
-
+    width: 80px;
+    height: 80px;
 }
 
 .plushka_txt{
-
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 24px;
 }
 
 .plushka_txt_title{
-    
+    font-family: "Firasansmedium";
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
 }
 
 .plushka_txt_text{
-
+    font-family: "Firasansregular";
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .plushka_button{
