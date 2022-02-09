@@ -202,12 +202,16 @@ body{
     width: 40px;
 }
 
+/*стилизация полосы прокрутки блока*/
 .right_part_content{
     height: 100%;
     overflow-y: scroll;
+    /*свойства, прописанное специально для mozila fire fow, так как описанные ниже свойства там не работают*/
+    /*цвета полосы прокрутки*/
+    scrollbar-color: #147E4B transparent;
+    /*скрытие стрелочек на полосе прокрутки*/
+    scrollbar-width: thin;
 }
-
-/*стилизация полосы прокрутки блока*/
 
 /*сама полоса*/
 .right_part_content::-webkit-scrollbar{
