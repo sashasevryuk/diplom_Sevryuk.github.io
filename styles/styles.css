@@ -16,8 +16,13 @@ a:hover{
     text-decoration: none;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     background-color: yellow;
+    height: 100%;
 }
 
 .main_container{
@@ -25,12 +30,12 @@ body{
     flex-direction: row;
     justify-content: space-between;
     background-color: blue;
-    /*высоту не задаем, временно*/
-    height: 1000px;
+    height: 100%;
     margin: 0 112px;
 }
 
 .main_container_left_part{
+    height: 100%;
     background-color: #ffffff;
     width: 280px;
     box-shadow: 5px 0px 10px 0px rgba(0, 148, 63, 0.1);
@@ -52,11 +57,8 @@ body{
     margin: 0 auto;
 }
 
-
-
 .left_part_navigation{
-    /*высоту не задаем, временно что-то решить с высотой!!!!!*/
-    height: 1000px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,9 +103,6 @@ body{
     padding-right: 14px;
 }
 
-
-
-
 .navigation_exit{
     background-color: #ffffff;
     display: flex;
@@ -137,41 +136,61 @@ body{
     color: #147E4B;
 }
 
-
-
-
-
-
-
 .main_container_right_part{
-    background-color: green;
+    background-color: darkorange;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.right_part_navigation{
+    background-color: darksalmon;
+    height: 104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.right_part_name_page{
+    background-color: deeppink;
+    width: 50px;
+}
+
+.right_part_pictograms{
+    background-color: gold;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.pictograms_item{
+    /*центрируем элемент по вертикали*/
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.pictograms_item_first{
+    margin-left: 0;
+}
+
+.pictograms_item img{
+    width: 40px;
+}
+
+.right_part_content{
+    background-color: rgb(0, 99, 129);
+    height: 100%;
 }
 
 
 
 
 
-.item1_ico{}
-.item1_text{}
-.menu_item2{}
-.item2_ico{}
-.item2_text{}
-.menu_item3{}
-.item3_ico{}
-.item3_text{}          
-.menu_item4{}
-.item4_ico{}                
-.item4_text{}
-.menu_item5{}
-.item5_ico{}
-.item5_text{}
-
-          
-
-.right_part_name_page{}
 .name_page_ico{}
 .name_page_text{}
-.right_part_pictograms{}
-.pictograms_item1{}
-.pictograms_item2{}           
-.pictograms_item3{}
+
+
