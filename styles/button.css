@@ -15,6 +15,7 @@
 .button{
     font-family: "Firasansregular";
     border: 1px solid #00943f;
+    height: 40px;
     box-sizing: border-box;
     border-radius: 10px;
     font-size: 16px;
@@ -23,11 +24,13 @@
     padding: 10px 25px 11px 25px;
     box-shadow: 0 2px 1px 0 #00943F;
     background-color: #ffffff;
+    /*запрет переноса текста в кнопке на новую строку*/
+    white-space: nowrap;
 }
 
 .min{
     font-size: 14px;
-    padding: 12px 25px 11px 25px;
+    padding: 11px 25px 11px 25px;
     line-height: 17px;
     font-weight: normal;
 }
