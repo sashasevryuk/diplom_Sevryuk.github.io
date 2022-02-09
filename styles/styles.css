@@ -29,7 +29,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     height: 100%;
     margin: 0 112px;
 }
@@ -42,11 +42,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    /*тестовый вариант, чтобы этот блок был над остальными*/
+    z-index: 1;
 }
 
 .left_part_logo{
     height: 104px;
-    background-color: blueviolet;
+    width: 280px;
     /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
@@ -61,10 +63,10 @@ body{
 .left_part_navigation{
     display: flex;
     flex-grow: 1;
-    /*height: 100%;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 280px;
 }
 
 .navigation_menu{
@@ -142,7 +144,6 @@ body{
 
 
 .main_container_right_part{
-    background-color: darkorange;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -153,7 +154,7 @@ body{
 }
 
 .right_part_navigation{
-    background-color: darksalmon;
+    background-color: #ffffff;
     height: 104px;
     display: flex;
     flex-direction: row;
@@ -163,7 +164,6 @@ body{
 }
 
 .right_part_name_page{
-    background-color: deeppink;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -173,7 +173,6 @@ body{
     /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
-    background-color: gray;
     margin-right: 16px;
 }
 
@@ -183,7 +182,6 @@ body{
 }
 
 .name_page_text{
-    background-color: red;
     font-family: "Firasansregular";
     font-size: 20px;
     line-height: 24px;
@@ -194,7 +192,6 @@ body{
 }
 
 .right_part_pictograms{
-    background-color: gold;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -216,7 +213,30 @@ body{
 }
 
 .right_part_content{
-    background-color: rgb(0, 99, 129);
     height: 100%;
+    overflow-y: scroll;
+}
+
+/*стилизация полосы прокрутки блока*/
+
+/*сама полоса*/
+.right_part_content::-webkit-scrollbar{
+    width: 7px;
+    background-color: #ffffff;
+}
+
+/*ползунок полосы*/
+.right_part_content::-webkit-scrollbar-thumb {
+    background-color: #147E4B;
+    border-radius: 10px;
+}
+
+
+
+
+
+.right_part_text_area{
+    background-color: royalblue;
+    margin: 32px 32px 0 32px;
 }
 
