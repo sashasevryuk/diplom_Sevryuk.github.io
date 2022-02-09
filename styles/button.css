@@ -13,19 +13,23 @@
 }
 
 .button{
- font-family: "Firasansregular";
- background-color: #ffffff;
- border: 1px solid #00943f;
- border-radius: 10px;
- font-size: 16px;
- color: #147E4B;
- padding: 10px 25px 11px 25px;
- box-shadow: 0 2px 1px 0 #00943F;
+    font-family: "Firasansregular";
+    border: 1px solid #00943f;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #147E4B;
+    padding: 10px 25px 11px 25px;
+    box-shadow: 0 2px 1px 0 #00943F;
+    background-color: #ffffff;
 }
 
 .min{
     font-size: 14px;
     padding: 12px 25px 11px 25px;
+    line-height: 17px;
+    font-weight: normal;
 }
 
 .button:hover{

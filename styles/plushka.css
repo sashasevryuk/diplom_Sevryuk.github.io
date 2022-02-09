@@ -23,9 +23,18 @@
     padding: 20px;
 }
 
+.plushka_main_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .plushka_img{
     width: 80px;
     height: 80px;
+    margin: auto;
+    flex-grow: 1;
+    padding-bottom: 8px;
 }
 
 .plushka_txt{
@@ -33,6 +42,7 @@
     flex-direction: column;
     padding-left: 16px;
     padding-right: 24px;
+    flex-grow: 1;
 }
 
 .plushka_txt_title{
@@ -40,6 +50,7 @@
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
+    padding-bottom: 8px;
 }
 
 .plushka_txt_text{
@@ -49,5 +60,6 @@
 }
 
 .plushka_button{
-
+    display: flex;
+    align-items: center;
 }
