@@ -12,6 +12,9 @@
     font-weight: normal;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
 body{
     background-color: yellow;
@@ -23,7 +26,7 @@ body{
     justify-content: space-between;
     background-color: blue;
     /*высоту не задаем, временно*/
-    height: 1500px;
+    height: 1000px;
     margin: 0 112px;
 }
 
@@ -52,33 +55,64 @@ body{
 
 
 .left_part_navigation{
-    background-color: brown;
-    /*высоту не задаем, временно*/
-    height: 1500px;
+    /*высоту не задаем, временно что-то решить с высотой!!!!!*/
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .navigation_menu{
-    background-color: rgb(102, 243, 89);
-    /*высоту не задаем, временно*/
-    height: 500px;
+    padding: 0 30px;
 }
 
+.menu_item{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+.last_menu_item{
+    margin-bottom: 0;
+}
+
+.first_menu_item{
+    margin-top: 30px;
+}
+
+.item_text{
+    /*центрируем элемент по вертикали*/
+    display: flex;
+    align-items: center;
+}
+
+.item_text p{
+    font-family: "Firasansregular";
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    letter-spacing: -0.4px;
+}
+
+.item_ico img{
+    height: 40px;
+    padding-right: 14px;
+}
+
+
+
+
 .navigation_exit{
-    background-color: rgb(65, 42, 165);
-    /*высоту не задаем, временно*/
-    height: 300px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 24px;
 }
 
 .exit_ico{
-    background-color: rgb(165, 42, 144);
-    /*высоту не задаем, временно*/
-    height: 100px;
     /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
@@ -90,22 +124,19 @@ body{
 }
 
 .exit_text{
-    background-color: rgb(165, 142, 42);
-    /*высоту не задаем, временно*/
-    height: 100px;
     /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
+    
+} 
+.exit_text a{
     font-family: "Firasansregular";
     font-size: 18px;
     line-height: 22px;
     text-decoration-line: underline;
     color: #147E4B;
-} 
-
-.exit_ico_txt{
-    
 }
+
 
 
 
@@ -119,7 +150,7 @@ body{
 
 
 
-.menu_item1{}
+
 .item1_ico{}
 .item1_text{}
 .menu_item2{}

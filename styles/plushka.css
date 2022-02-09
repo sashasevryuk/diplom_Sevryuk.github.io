@@ -51,12 +51,14 @@
     line-height: 17px;
     font-weight: 500;
     padding-bottom: 8px;
+    letter-spacing: -0.4px;
 }
 
 .plushka_txt_text{
     font-family: "Firasansregular";
     font-size: 12px;
     line-height: 14px;
+    letter-spacing: -0.4px;
 }
 
 .plushka_button{

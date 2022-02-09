@@ -20,6 +20,7 @@
     border-radius: 10px;
     font-size: 16px;
     line-height: 19px;
+    letter-spacing: -0.4px;
     color: #147E4B;
     padding: 10px 25px 11px 25px;
     box-shadow: 0 2px 1px 0 #00943F;
@@ -33,6 +34,7 @@
     padding: 11px 25px 11px 25px;
     line-height: 17px;
     font-weight: normal;
+    letter-spacing: -0.4px;
 }
 
 .button:hover{
