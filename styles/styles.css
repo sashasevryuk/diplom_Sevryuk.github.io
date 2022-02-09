@@ -145,6 +145,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    display: flex;
+    /*свойство, для того, чтобы правая часть контента занимала всю оставшуюся ширину рабочего экрана*/
+    flex-grow: 1;
 }
 
 .right_part_navigation{
