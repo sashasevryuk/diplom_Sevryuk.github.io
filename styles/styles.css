@@ -21,7 +21,7 @@ html{
 }
 
 body{
-    background-color: yellow;
+    background-color: #ffffff;
     height: 100%;
 }
 
@@ -31,7 +31,7 @@ body{
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     height: 100%;
-    margin: 0 112px;
+    /*margin: 0 112px;*/
 }
 
 .main_container_left_part{
@@ -49,14 +49,12 @@ body{
 .left_part_logo{
     height: 104px;
     width: 280px;
-    /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
 }
 
 .logo{
     height: 30px;
-    /*центрируем элемент по горизонтали*/
     margin: 0 auto;
 }
 
@@ -90,7 +88,6 @@ body{
 }
 
 .item_text{
-    /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
 }
@@ -117,7 +114,6 @@ body{
 }
 
 .exit_ico{
-    /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
 }
@@ -128,7 +124,6 @@ body{
 }
 
 .exit_text{
-    /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
     
@@ -140,8 +135,6 @@ body{
     text-decoration-line: underline;
     color: #147E4B;
 }
-
-
 
 .main_container_right_part{
     height: 100%;
@@ -170,7 +163,6 @@ body{
 }
 
 .name_page_ico{
-    /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
     margin-right: 16px;
@@ -186,7 +178,6 @@ body{
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.4px;
-    /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
 }
@@ -198,7 +189,6 @@ body{
 }
 
 .pictograms_item{
-    /*центрируем элемент по вертикали*/
     display: flex;
     align-items: center;
     margin-left: 24px;
@@ -222,7 +212,7 @@ body{
 /*сама полоса*/
 .right_part_content::-webkit-scrollbar{
     width: 7px;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 /*ползунок полосы*/
