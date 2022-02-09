@@ -1,14 +1,146 @@
 @font-face{
     font-family: "Firasansmedium";
-    src: url("../fonts/Firasansmedium.ttf") format("truetype");
+    src: url("/fonts/Firasansregular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face{
     font-family: "Firasansregular";
-    src: url("../fonts/Firasansregular.ttf") format("truetype");
+    src: url("/fonts/Firasansregular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
+
+body{
+    background-color: yellow;
+}
+
+.main_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue;
+    /*высоту не задаем, временно*/
+    height: 1500px;
+    margin: 0 112px;
+}
+
+.main_container_left_part{
+    background-color: #ffffff;
+    width: 280px;
+    box-shadow: 5px 0px 10px 0px rgba(0, 148, 63, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.left_part_logo{
+    height: 104px;
+    background-color: blueviolet;
+    /*центрируем элемент по вертикали*/
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    /*центрируем элемент по горизонтали*/
+    margin: 0 auto;
+}
+
+
+
+.left_part_navigation{
+    background-color: brown;
+    /*высоту не задаем, временно*/
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation_menu{
+    background-color: rgb(102, 243, 89);
+    /*высоту не задаем, временно*/
+    height: 500px;
+}
+
+.navigation_exit{
+    background-color: rgb(65, 42, 165);
+    /*высоту не задаем, временно*/
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.exit_ico{
+    background-color: rgb(165, 42, 144);
+    /*высоту не задаем, временно*/
+    height: 100px;
+    /*центрируем элемент по вертикали*/
+    display: flex;
+    align-items: center;
+}
+
+.exit_ico img{
+    height: 40px;
+    width: 40px;
+}
+
+.exit_text{
+    background-color: rgb(165, 142, 42);
+    /*высоту не задаем, временно*/
+    height: 100px;
+    /*центрируем элемент по вертикали*/
+    display: flex;
+    align-items: center;
+    font-family: "Firasansregular";
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #147E4B;
+} 
+
+.exit_ico_txt{
+    
+}
+
+
+
+
+
+
+.main_container_right_part{
+    background-color: green;
+}
+
+
+
+
+.menu_item1{}
+.item1_ico{}
+.item1_text{}
+.menu_item2{}
+.item2_ico{}
+.item2_text{}
+.menu_item3{}
+.item3_ico{}
+.item3_text{}          
+.menu_item4{}
+.item4_ico{}                
+.item4_text{}
+.menu_item5{}
+.item5_ico{}
+.item5_text{}
+
+          
+
+.right_part_name_page{}
+.name_page_ico{}
+.name_page_text{}
+.right_part_pictograms{}
+.pictograms_item1{}
+.pictograms_item2{}           
+.pictograms_item3{}

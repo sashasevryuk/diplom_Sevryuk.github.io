@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
 *,
 *::before,
 *::after {
@@ -328,3 +329,9 @@ template {
   display: none !important;
 }
 /*# sourceMappingURL=bootstrap-reboot.css.map */
+
+/*мои стили, прописанные вручную*/
+p{
+  margin: 0;
+  padding: 0;
+}
