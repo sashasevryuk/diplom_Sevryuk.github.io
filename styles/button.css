@@ -13,5 +13,28 @@
 }
 
 .button{
- font-family: "Firasansmedium";
+ font-family: "Firasansregular";
+ background-color: #ffffff;
+ border: 1px solid #00943f;
+ border-radius: 10px;
+ font-size: 16px;
+ color: #147E4B;
+ padding: 10px 25px 11px 25px;
+ box-shadow: 0 2px 1px 0 #00943F;
+}
+
+.min{
+    font-size: 14px;
+    padding: 12px 25px 11px 25px;
+}
+
+.button:hover{
+    outline: none;
+    background-color: #45A73E;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.button:focus, .button:active{
+    background-color: #147E4B;
 }
