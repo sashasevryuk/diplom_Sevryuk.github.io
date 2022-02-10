@@ -1,0 +1,111 @@
+@font-face{
+    font-family: "Firasansmedium";
+    src: url("/fonts/Firasansregular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "Firasansregular";
+    src: url("/fonts/Firasansregular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+   /* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    padding-top: 104px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    /*свойства, прописанное специально для mozila fire fox, так как описанные ниже свойства там не работают*/
+    /*цвета полосы прокрутки*/
+    scrollbar-color: #147E4B transparent;
+    /*скрытие стрелочек на полосе прокрутки*/
+    scrollbar-width: thin;
+    background-color: rgba(6, 56, 32, 0.25);
+    }
+
+/*сама полоса прокрутки*/
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: transparent;
+}
+    
+/*ползунок полосы прокрутки*/
+::-webkit-scrollbar-thumb {
+    background-color: #147E4B;
+    border-radius: 10px;
+}
+    
+/* Модальное содержание */
+.modal-content {
+  position: relative;
+    background-color: #147E4B;
+    /*меняющиеся параметры*/
+    width: 423px;
+    height: 215px;
+    border-radius: 10px; 
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; 
+}
+
+/* Добавить анимацию */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+    
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal_title{
+    font-family: "Firasansregular";
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    margin: auto;
+    padding-bottom: 8px;
+}
+
+.modal_text{
+    font-family: "Firasansregular";
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin: auto;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.modal_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal_button1{
+    padding-right: 24px;
+}
+
+
+
+    

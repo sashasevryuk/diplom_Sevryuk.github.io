@@ -37,13 +37,15 @@
     letter-spacing: -0.4px;
 }
 
-.button:hover{
+.button:hover, .button:focus{
     outline: none;
     background-color: #45A73E;
     color: #ffffff;
     box-shadow: none;
 }
 
-.button:focus, .button:active{
+.button:active{
     background-color: #147E4B;
 }
+
+
