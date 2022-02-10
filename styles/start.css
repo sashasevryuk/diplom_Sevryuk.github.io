@@ -64,3 +64,85 @@ body{
 .start_page_button_1{
     padding-right: 48px;
 }
+
+/*modal_registration*/
+
+.modal-content{
+    width: 455px;
+    height: 691px;
+}
+
+.modal_form_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_content_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 16px;
+}
+
+.item_check{
+    justify-content: start;
+
+}
+
+.form_content_item input{
+    width: 247px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Firasansregular";
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.4px;
+    color: #000000;
+}
+
+.form_content_item input:active,
+.form_content_item input:focus,
+.form_content_item input:hover{
+    border: none;
+    outline: none;
+}
+
+.item_check input{
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #B2D6BB;
+    box-sizing: border-box;
+    border-radius: 5px; 
+}
+
+.content_item_text{
+    font-family: "Firasansmedium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    padding-right: 8px;
+}
+
+.item_check div{  
+    height: 26px;
+    font-family: "Firasansregular";
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 0;
+}
+
+.regbutton{
+    padding-top: 8px;
+    padding-right: 0;
+}

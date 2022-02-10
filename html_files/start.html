@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/button.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../styles/modal_window.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../styles/start.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/modal_start.css" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -23,13 +24,107 @@
             <div class="start_page_text">Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба
                 Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба </div>
             <div class="start_page_buttons">
-                <div class="start_page_button_1"><button class="button"
-                        onclick="document.location='../html_files/button.html'">Зарегистрироваться</button></div>
+                <div class="start_page_button_1" id="regBtn"><button class="button">Зарегистрироваться</button></div>
                 <div class="start_page_button_2"><button class="button"
                         onclick="document.location='../html_files/button.html'">Войти</button></div>
             </div>
         </div>
     </div>
+
+    <!--Модальное окно выход-->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal_title">
+                    <p>Форма регистрации</p>
+                </div>
+                <div class="modal_text">
+                    <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
+                </div>
+                <div class="modal_form">
+                    <form class="modal_form_content">
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>Фамилия*</p>
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>Имя*</p>
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>Отдел*
+                                </p>
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>Должность*
+                                </p>
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>E-mail*
+                                </p>
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>Пароль*
+                                </p>
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>Повтор пароля*
+                                </p>
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="form_content_item">
+                            <div class="content_item_text">
+                                <p>Телефон*
+                                </p>
+                            </div>
+                            <input type="text">
+                        </div>
+
+                        <div class="form_content_item item_check">
+                            <input type="checkbox">
+                            <div>
+                                <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                                    рыба</p>
+                            </div>
+                        </div> 
+                        <div class="form_content_item item_check">
+                            <input type="checkbox">
+                            <div>
+                                <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                                    рыба</p>
+                            </div>
+                        </div>
+                        
+                        <div class="modal_buttons">
+                            <div class="modal_button1 regbutton"><button class="button"
+                                    onclick="document.location='../html_files/button.html'">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/modal_start.js"></script>
 </body>
 
 </html>
