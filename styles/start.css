@@ -128,6 +128,8 @@ body{
     letter-spacing: -0.4px;
     color: #FFFFFF;
     padding-right: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .item_check div{  
