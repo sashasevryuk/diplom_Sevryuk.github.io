@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <!--Модальное окно выход-->
+    <!--Модальное окно регистрации-->
     <div id="registrationModal" class="modal">
         <div class="modal-content">
             <div class="modal-body">
@@ -104,7 +104,7 @@
                                 <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
                                     рыба</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="form_content_item item_check">
                             <input type="checkbox">
                             <div>
@@ -112,10 +112,10 @@
                                     рыба</p>
                             </div>
                         </div>
-                        
+
                         <div class="modal_buttons">
-                            <div class="modal_button1 regbutton"><button class="button"
-                                    onclick="document.location='../html_files/button.html'">Зарегистрироваться</button>
+                            <div class="modal_button1 regbutton" id="regBtn2"><button type="submit"
+                                    class="button">Зарегистрироваться</button>
                             </div>
                         </div>
                     </form>
@@ -124,6 +124,25 @@
             </div>
         </div>
     </div>
+
+
+    <!--Модальное окно уведомляющее о успешной регистрации-->
+    <div id="registrationModal2" class="modal">
+        <div class="modal-content ok_reg">
+            <div class="modal-body">
+                <div class="modal_title">
+                    <p>Вы успешно зарегистрировались</p>
+                </div>
+                <div class="modal_text">
+                    <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
+                </div>
+                <div class="modal_buttons">
+                    <div class="modal_button1 ok_but"><button class="button" onclick="document.location='../html_files/button.html'">Войти</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="../js/modal_start.js"></script>
 </body>
 

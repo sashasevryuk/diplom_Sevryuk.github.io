@@ -146,3 +146,12 @@ body{
     padding-top: 8px;
     padding-right: 0;
 }
+
+.ok_reg{
+    width: 446px;
+    height: 215px;
+}
+
+.ok_but{
+    padding-right: 0;
+}
