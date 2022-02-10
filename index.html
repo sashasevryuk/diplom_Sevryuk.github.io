@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./styles/plushka.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./styles/button.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./styles/modal_window.css" media="screen">
     <script src="./js/jquery.js"></script>
     <script src="./js/left_menu.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -78,7 +79,7 @@
                 <div class="btn btn2" data-num="2">
                     <img src="./images/hide_menu.png" alt="скрыть меню">
                 </div>
-                <div class="navigation_exit">
+                <div class="navigation_exit" id="exitBtn">
                     <div class="exit_ico">
                         <a href="#"><img src="./images/exit1.png" alt="выход"></a>
                     </div>
@@ -139,7 +140,7 @@
                 <div class="btn btn1" data-num="1">
                     <img src="./images/hide_menu1.png" alt="скрыть меню">
                 </div>
-                <div class="navigation_exit2">
+                <div class="navigation_exit2" id="exitBtn2">
                     <div class="exit_ico">
                         <a href="#"><img src="./images/exit1.png" alt="выход"></a>
                     </div>
@@ -147,6 +148,25 @@
             </div>
         </div>
 
+        <div id="exitModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal_title">
+                        <p>Вы уверены, что хотите выйти?</p>
+                    </div>
+                    <div class="modal_text">
+                        <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                            рыба</p>
+                    </div>
+                    <div class="modal_buttons">
+                        <div class="modal_button1"><button class="button"
+                                onclick="document.location='../html_files/button.html'">Отмена</button></div>
+                        <div class="modal_button2"> <button class="button"
+                                onclick="document.location='../html_files/button.html'">Да</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div class="main_container_right_part">
@@ -341,6 +361,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/modal_exit.js"></script>
 </body>
 
 </html>
