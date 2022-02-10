@@ -8,12 +8,14 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./styles/plushka.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./styles/button.css" media="screen">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/left_menu.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
     <div class="main_container">
-        <div class="main_container_left_part">
+        <div class="main_container_left_part block active" id="block1">
             <div class="left_part_logo">
                 <div class="logo">
                     <a href="#"><img src="./images/logotype.png" alt="логотип"></a>
@@ -72,6 +74,9 @@
                         </div>
                     </a>
                 </div>
+                <div class="btn btn2" data-num="2">
+                    <img src="./images/hide_menu.png" alt="скрыть меню">
+                </div>
                 <div class="navigation_exit">
                     <div class="exit_ico">
                         <a href="#"><img src="./images/exit1.png" alt="выход"></a>
@@ -84,6 +89,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="main_container_left_part2 block" id="block2">
+            <div class="btn btn1" data-num="1">
+                <img src="./images/hide_menu.png" alt="скрыть меню">
+            </div>
+        </div>
+
+
         <div class="main_container_right_part">
             <div class="right_part_navigation">
                 <div class="right_part_name_page">
