@@ -297,3 +297,41 @@ body{
     margin: 32px 32px 0 32px;
 }
 
+.mistake404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mistake_404{
+    display: flex;
+    flex-direction: column;
+    width: 499px;
+    height: 409px;
+    margin: 0;
+}
+
+.mistake_item1{
+    width: 499px;
+    margin: auto;
+    padding-bottom: 32px;
+}
+
+.mistake_item2{
+    font-family: "Firasansregular";
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.4px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.mistake_item3{
+    font-family: "Firasansregular";
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    color: #000000;
+    text-align: center;
+}
