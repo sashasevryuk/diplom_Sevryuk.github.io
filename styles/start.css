@@ -111,6 +111,10 @@ body{
     outline: none;
 }
 
+.form_content_item input:focus{
+    background-color: #e2fff1;
+}
+
 .item_check input{
     width: 15px;
     height: 15px;
