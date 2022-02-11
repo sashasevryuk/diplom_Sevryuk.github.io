@@ -62,3 +62,117 @@
 .calendar_plashka{
     margin-bottom: 16px;
 }
+
+.content_calendar{
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+.calendar_center_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar_arrow{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.calendar_count{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.calendar_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar_body_row{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.calendar_arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calendar_body_row_item{
+    width: 105px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #147E4B;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(20, 126, 75, 0.2);
+    border-radius: 10px;
+    margin-right: 12px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar_body_row_item div{
+    padding: 0 0 0 4px;
+}
+
+.row_item_unactive{
+    color: #B2D6BB;
+}
+
+.item_today{
+    background: #147E4B;
+    color: #ffffff;
+}
+
+.item_krug{
+    width: 50px;
+    height: 50px;
+    background: #147E4B;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 0;
+}
+
+.item_krug p{
+    color: #ffffff;
+    padding-left: 14px;
+    padding-top: 8px;
+}
+
+.calendar_body_row_item.last{
+    margin-right: 0;
+}
+
+.calendar_data{
+    font-family: "Firasansmedium";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.calendar_count{
+    font-family: "Firasansregular";
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
