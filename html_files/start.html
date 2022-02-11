@@ -25,15 +25,14 @@
                 Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба </div>
             <div class="start_page_buttons">
                 <div class="start_page_button_1" id="regBtn"><button class="button">Зарегистрироваться</button></div>
-                <div class="start_page_button_2"><button class="button"
-                        onclick="document.location='../html_files/button.html'">Войти</button></div>
+                <div class="start_page_button_2" id="avtBtn"><button class="button">Войти</button></div>
             </div>
         </div>
     </div>
 
     <!--Модальное окно регистрации-->
     <div id="registrationModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content reg">
             <div class="modal-body">
                 <div class="modal_title">
                     <p>Форма регистрации</p>
@@ -42,7 +41,7 @@
                     <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
                 </div>
                 <div class="modal_form">
-                    <form class="modal_form_content">
+                    <form class="modal_form_content" id="form1">
                         <div class="form_content_item">
                             <label class="content_item_text" for="familia"> Фамилия*</label>
                             <input type="text" id="familia" required placeholder="Иванов">
@@ -96,6 +95,49 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Модальное окно авторизации-->
+    <div id="avtorizationModal" class="modal">
+        <div class="modal-content avt">
+            <div class="modal-body">
+                <div class="modal_title">
+                    <p>Форма авторизации</p>
+                </div>
+                <div class="modal_text">
+                    <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
+                </div>
+                <div class="modal_form">
+                    <form class="modal_form_content" id="form2">
+                        
+                        <div class="form_content_item">
+                            <label class="content_item_text" for="Email">E-mail*</label>
+                            <input type="text" id="Email" required placeholder="ivanov.ivan@gmail.com">
+                        </div>
+                        <div class="form_content_item">
+                            <label class="content_item_text" for="Parol">Пароль*</label>
+                            <input type="text" id="Parol" required>
+                        </div>
+                        <div class="form_content_item item_check dop_check">
+                            <input type="checkbox">
+                            <div>
+                                <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                                    рыба</p>
+                            </div>
+                        </div>
+                        
+                        <div class="modal_buttons">
+                            <div class="modal_button1 avtbutton" id="avtBtn2"><button type="submit"
+                                    class="button" onclick="document.location='../index.html'">Войти</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="add_avt">
+                        <a href="#"><p>Не получается войти?</p></a>
+                    </div>
                 </div>
             </div>
         </div>
