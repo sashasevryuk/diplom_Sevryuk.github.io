@@ -297,6 +297,9 @@ body{
     margin: 32px 32px 0 32px;
 }
 
+
+/*page_mistake_404*/
+
 .mistake404{
     display: flex;
     justify-content: center;
@@ -334,4 +337,15 @@ body{
     letter-spacing: -0.4px;
     color: #000000;
     text-align: center;
+}
+
+
+
+
+.name_page_text a{
+    color: #000000;
+}
+
+.name_page_text a:hover{
+    text-decoration: underline;
 }
