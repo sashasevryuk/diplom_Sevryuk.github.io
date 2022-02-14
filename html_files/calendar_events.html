@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Расписание</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap-reboot.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/plushka.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/button.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/modal_window.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/calendar.css" media="screen">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/left_menu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="main_container_left_part block active" id="block1">
+            <div class="left_part_logo">
+                <div class="logo">
+                    <a href="../index.html"><img src="../images/logotype.png" alt="логотип"></a>
+                </div>
+            </div>
+            <div class="left_part_navigation">
+                <div class="navigation_menu">
+                    <a href="#">
+                        <div class="menu_item first_menu_item">
+                            <div class="item_ico active_menu_item">
+                                <img src="../images/calendar2.png" alt="расписание">
+                            </div>
+                            <div class="item_text active_menu_text">
+                                <p><b>Расписание</b></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="materials.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/materials1.png" alt="учебные материалы">
+                            </div>
+                            <div class="item_text">
+                                <p>Учебные материалы</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="testing.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/testing1.png" alt="тестирование">
+                            </div>
+                            <div class="item_text">
+                                <p>Тестирование</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="results.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/results1.png" alt="результаты">
+                            </div>
+                            <div class="item_text">
+                                <p>Результаты</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="menu_item last_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/question1.png" alt="поддержка">
+                            </div>
+                            <div class="item_text">
+                                <p>Поддержка</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn btn2" data-num="2">
+                    <img src="../images/hide_menu.png" alt="скрыть меню">
+                </div>
+                <div class="navigation_exit" id="exitBtn">
+                    <div class="exit_ico">
+                        <a href="#"><img src="../images/exit1.png" alt="выход"></a>
+                    </div>
+                    <div class="exit_text">
+                        <a href="#">
+                            <p>Выйти</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main_container_left_part2 block" id="block2">
+            <div class="left_part_logo2">
+                <div class="logo">
+                    <a href="../index.html"><img src="../images/logo.png" alt="логотип"></a>
+                </div>
+            </div>
+            <div class="left_part_navigation">
+                <div class="navigation_menu">
+                    <a href="#">
+                        <div class="menu_item first_menu_item">
+                            <div class="item_ico active_menu_item">
+                                <img src="../images/calendar2.png" alt="расписание">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="materials.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/materials1.png" alt="учебные материалы">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="testing.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/testing1.png" alt="тестирование">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="results.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/results1.png" alt="результаты">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="menu_item last_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/question1.png" alt="поддержка">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn btn1" data-num="1">
+                    <img src="../images/hide_menu1.png" alt="скрыть меню">
+                </div>
+                <div class="navigation_exit2" id="exitBtn2">
+                    <div class="exit_ico">
+                        <a href="#"><img src="../images/exit1.png" alt="выход"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Модальное окно выход-->
+        <div id="exitModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal_title">
+                        <p>Вы уверены, что хотите выйти?</p>
+                    </div>
+                    <div class="modal_text">
+                        <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                            рыба</p>
+                    </div>
+                    <div class="modal_buttons">
+                        <div class="modal_button1"><button class="button modal_exit_close_btn">Отмена</button></div>
+                        <div class="modal_button2"> <button class="button"
+                                onclick="document.location='start.html'">Да</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main_container_right_part">
+            <div class="right_part_navigation">
+                <div class="right_part_name_page">
+                    <!--<div class="name_page_ico">
+                        <a href="#"><img src="../images/arrow.png" alt="назад"></a>
+                    </div>-->
+                    <div class="name_page_text">
+                        <p>Расписание</p>
+                    </div>
+                </div>
+                <div class="right_part_pictograms">
+                    <div class="pictograms_item pictograms_item_first">
+                        <a href="#"><img src="../images/search1.png" alt="поиск"></a>
+                    </div>
+                    <div class="pictograms_item">
+                        <a href="#"><img src="../images/notification1.png" alt="уведомления"></a>
+                    </div>
+                    <div class="pictograms_item">
+                        <a href="#"><img src="../images/user1.png" alt="личный кабинет"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right_part_content">
+                <div class="bread">
+                    <p><a href="calendar.html">Расписание</a>/События 25 Января 2022</p>
+                </div>
+                <div class="right_part_text_area calendar">
+                    <div class="tabs">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openPage(event,'content_calendar')"
+                                id="defaultOpen">Календарь</button>
+                        </div>
+                        <div class="tab">
+                            <button class="tablinks" onclick="openPage(event,'content_events')">Список событий</button>
+                        </div>
+                    </div>
+                    <div id="content_calendar" class="tabcontent">
+                        <div class="calendar_title">
+
+                            <div class="calendar_center_title">
+
+                                <a href="calendar_events2.html">
+                                    <div class="calendar_arrow">
+                                        <img src="../images/arrow_left.png" alt="стрелка влево">
+                                    </div>
+                                </a>
+
+                                <div class="calendar_data">26 января 2022</div>
+
+                                <a href="calendar_events1.html">
+                                    <div class="calendar_arrow">
+                                        <img src="../images/arrow_right.png" alt="стрелка вправо">
+                                    </div>
+                                </a>
+
+                            </div>
+
+
+                        </div>
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+
+                    </div>
+                    <div id="content_events" class="tabcontent">
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Дата события: Вторник, 08.02.2022
+                                            <br>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Дата события: Вторник, 08.02.2022
+                                            <br>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Дата события: Вторник, 08.02.2022
+                                            <br>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Дата события: Вторник, 08.02.2022
+                                            <br>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Дата события: Вторник, 08.02.2022
+                                            <br>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Дата события: Вторник, 08.02.2022
+                                            <br>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+
+                        <div class="plushka calendar_plashka">
+                            <div class="plushka_main_content">
+                                <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки">
+                                </div>
+                                <div class="plushka_txt">
+                                    <div class="plushka_txt_title">
+                                        <p>Название события</p>
+                                    </div>
+                                    <div class="plushka_txt_text">
+                                        <p>Дата события: Вторник, 08.02.2022
+                                            <br>Время начала события: 15:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plushka_button"><button class="button min"
+                                    onclick="document.location='#'">Открыть</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/modal_exit.js"></script>
+</body>
+
+</html>
