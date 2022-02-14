@@ -360,3 +360,21 @@ body{
 .materials_plushka{
     margin-bottom: 16px;
 }
+
+.bread{
+    margin-left: 32px;
+    margin-bottom: -16px;
+    margin-top: 14px;
+    font-family: "Firasansregular";
+    font-size: 12px;
+}
+
+.bread a{
+    color: #000000;
+    text-decoration-line: underline;
+    color: #147E4B;
+}
+
+.bread a:hover{
+    text-decoration:solid;
+}
