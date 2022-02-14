@@ -90,6 +90,7 @@ body{
 .item_text{
     display: flex;
     align-items: center;
+    padding-left: 8px;
 }
 
 .item_text p{
@@ -102,7 +103,10 @@ body{
 
 .item_ico img{
     height: 40px;
-    padding-right: 14px;
+    /* padding-right: 14px; */
+    background-color: white;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 .navigation_exit{
@@ -199,6 +203,8 @@ body{
 
 .pictograms_item img{
     width: 40px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .main_page{
@@ -383,4 +389,14 @@ body{
 
 .bread a:hover{
     text-decoration:solid;
+}
+
+
+.active_menu_item img{
+    background-color: #147E4B;
+}
+
+.active_menu_text p{
+    color:#147E4B;
+    /*text-decoration-line: underline;*/
 }
