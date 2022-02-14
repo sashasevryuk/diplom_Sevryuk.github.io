@@ -450,3 +450,7 @@ body{
     line-height: 14px;
     color: #000000;
 }
+
+.pictograms_item.active_menu_item img{
+    border-radius: 100px;
+}
