@@ -380,6 +380,7 @@ body{
     line-height: 19px;
     color: #000000;
     padding-bottom: 8px;
+    margin-top: 32px;
 }
 
 .results_text{
@@ -420,4 +421,32 @@ body{
 .active_menu_text p{
     color:#147E4B;
     /*text-decoration-line: underline;*/
+}
+
+.user_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 32px;
+}
+
+.user_photo{
+    margin-right: 32px;
+}
+
+.user_title{
+    font-family:"Firasansmedium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.user_text{
+    font-family:"Firasansregular";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
 }
