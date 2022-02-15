@@ -536,3 +536,61 @@ body{
     color: #000000;
     margin-bottom: 24px;
 }
+
+.name_material_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.mat_title, .mat_checkbox p{
+    font-family:"Firasansmedium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.mat_checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.mat_checkbox p{
+    margin-left: 8px;
+}
+
+.mat_checkbox input{
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #B2D6BB;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.name_material_txt{
+    font-family:"Firasansregular";
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.mat_img{
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.mat_plushka_title{
+    font-family:"Firasansregular";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 16px;
+}
