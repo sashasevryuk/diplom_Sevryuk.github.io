@@ -278,19 +278,19 @@
                                 <form class="support_form">
                                     <div class="support_form_item">
                                         <label for="support_ima">Имя*</label>
-                                        <input type="text" id="support_ima">
+                                        <input type="text" id="support_ima" required>
                                     </div>
                                     <div class="support_form_item">
                                         <label for="support_email">E-mail*</label>
-                                        <input type="text" id="support_email">
+                                        <input type="text" id="support_email" required>
                                     </div>
                                     <div class="support_form_item">
                                         <label for="support_phone">Телефон*</label>
-                                        <input type="text" id="support_phone">
+                                        <input type="text" id="support_phone" required>
                                     </div>
                                     <div class="support_form_item textarea">
                                         <label for="support_message">Текст сообщения*</label>
-                                        <textarea type="textarea" id="support_message"></textarea>
+                                        <textarea type="textarea" id="support_message" required></textarea>
                                     </div>
 
 
@@ -299,24 +299,26 @@
                                         <label class="label_files">Файлы</label>
                                         <div class="form-group">
                                             <label class="label">
-                                              <img class="support_form_icon" src="../images/attach_icon.png"></img>
-                                              <span class="support_form_title">Для загрузки файлов перетащите их сюда</span>
-                                              <input type="file">
+                                                <img class="support_form_icon" src="../images/attach_icon.png"></img>
+                                                <span class="support_form_title">Для загрузки файлов перетащите их
+                                                    сюда</span>
+                                                <input type="file">
                                             </label>
-                                          </div>
-                                        <!--
-                                        <label for="support_file">Файлы</label>
-                                        <input type="file" id="support_file">-->
+                                        </div>
                                     </div>
-                                    
+
+
 
 
                                     <div class="support_form_item2">
-                                        <input type="checkbox" id="support_checkbox">
+                                        <input type="checkbox" id="support_checkbox" required>
                                         <label for="support_checkbox">Текст рыба Текст рыба Текст рыба Текст рыба Текст
                                             рыба
                                             Текст рыба Текст рыба Текст рыба</label>
                                     </div>
+
+                                    <div class="support_button"><button class="button" type="submit"
+                                            onclick="document.location='#'">Отправить</button></div>
 
                                 </form>
                             </div>
