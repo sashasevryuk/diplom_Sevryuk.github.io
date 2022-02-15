@@ -239,13 +239,14 @@
                                 <div class="question_form_answer">
                                     <input type="text" name="answer">
                                 </div>
-                                
+
 
                             </form>
                             <div class="question_form_buttons">
                                 <button class="button" onclick="document.location='test3.html'">Следующее
                                     задание</button>
-                                <button class="button" type="submit" onclick="document.location='#'">Завершить выполнение</button>
+                                <button class="button" id="testBtn" type="submit" onclick="document.location='#'">Завершить
+                                    выполнение</button>
                             </div>
                             <div class="test_navigation">
                                 <div class="test_navigation_title">
@@ -285,12 +286,33 @@
                 </div>
             </div>
 
+            <!--Модальное окно подтверждения завершения теста-->
+            <div id="testModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal_title">
+                            <p>Вы уверены, что хотите завершить выполнение тестирования?</p>
+                        </div>
+                        <div class="modal_text">
+                            <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                                рыба</p>
+                        </div>
+                        <div class="modal_buttons">
+                            <div class="modal_button1"><button class="button modal_test_close_btn">Отмена</button></div>
+                            <div class="modal_button2"> <button class="button"
+                                    onclick="document.location='name_testing.html'">Да</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
 
 
         </div>
     </div>
+    <script src="../js/modal_test.js"></script>
     <script src="../js/modal_exit.js"></script>
 </body>
 
