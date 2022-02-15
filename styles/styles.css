@@ -1009,3 +1009,24 @@ textarea{
     background-color: #147E4B;
     color: #ffffff;
 }
+
+.question_form_answer input[type="text"]{
+    width: 200px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #147E4B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.question_form_answer input[type="text"]:active,
+.question_form_answer input[type="text"]:focus,
+.question_form_answer input[type="text"]:hover{
+    outline: none;
+}
+
+.question_form_answer input[type="text"]:focus{
+    background-color: #f6faf8;
+}
