@@ -317,10 +317,28 @@
                                             Текст рыба Текст рыба Текст рыба</label>
                                     </div>
 
-                                    <div class="support_button"><button class="button" type="submit"
+                                    <div class="support_button"><button class="button" id="supportBtn"
                                             onclick="document.location='#'">Отправить</button></div>
 
                                 </form>
+                            </div>
+                        </div>
+                        <!--Модальное окно уведомления об отправке-->
+                        <div id="supportModal" class="modal">
+                            <div class="modal-content support">
+                                <div class="modal-body">
+                                    <div class="modal_title">
+                                        <p>Ваше сообщение успешно отправлено сотруднику HR отдела</p>
+                                    </div>
+                                    <div class="modal_text">
+                                        <p>Через определенное время сотрудник свяжется с вами по указанному почтовому
+                                            адресу или номеру телефона и поможет решить ваш вопрос</p>
+                                    </div>
+                                    <div class="modal_buttons">
+                                        <div class="modal_button1 support"><button
+                                                class="button modal_support_close_btn">Продолжить работу</button></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -329,7 +347,8 @@
         </div>
     </div>
     <script src="../js/tabs.js"></script>
-    <script src="../js/modal_exit.js"></script>
+    <script src="../js/modal_support.js"></script>
+    <!--<script src="../js/modal_exit.js"></script>-->
 </body>
 
 </html>

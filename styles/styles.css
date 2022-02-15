@@ -1031,3 +1031,14 @@ textarea{
     background-color: #f6faf8;
 }
 
+.modal_button1.support{
+    padding-right: 0px;
+}
+
+.modal-content.support{
+    width: 462px;
+}
+
+.modal-content.test{
+    width: 469px;
+}
