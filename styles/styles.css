@@ -788,3 +788,25 @@ textarea{
     margin-bottom: 32px;
 }
 
+.stat1.test,
+.stat2.test,
+.stat3.test{
+    width: 250px;
+    height: 100px;
+}
+
+.number.test{
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.stat_txt.test{
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.test_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
