@@ -1042,3 +1042,60 @@ textarea{
 .modal-content.test{
     width: 469px;
 }
+
+
+.try_title{
+    font-family:"Firasansmedium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-bottom: 8px;
+}
+
+.try_text{
+    font-family: "Firasansregular";
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    padding-bottom: 24px;
+}
+
+.try_result_container{
+    /*height: 88px;*/
+    background: #D6B2B2;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.try_result_container p{
+    font-family: "Firasansregular";
+    font-size: 12px;
+    line-height: 14px;
+    padding: 16px;
+}
+
+.try_result_container.true{
+    background: #B2D6BB;
+}
+
+.try_result_container.false{
+    background: #D6B2B2;
+}
+
+.question_form_answer.try input{
+    border-color: #7E1414;
+}
+
+.question_form_answer.try input::placeholder{
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;  
+    padding-bottom: 5px;
+}
+
+.button.try{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
