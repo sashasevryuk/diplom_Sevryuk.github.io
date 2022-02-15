@@ -454,3 +454,68 @@ body{
 .pictograms_item.active_menu_item img{
     border-radius: 100px;
 }
+
+.main_page_stat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.stat1, .stat2, .stat3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(20, 126, 75, 0.2);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.stat1, .stat2{
+    margin-right: 30px;
+}
+
+.number{
+    font-family:"Firasansmedium";
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.4px;
+    color: #147E4B;
+}
+
+.stat_txt{
+    font-family:"Firasansmedium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.4px;
+    color: #147E4B;
+}
+
+.main_page_txt{
+    font-family:"Firasansregular";
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.main_page_img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.main_page_title{
+    font-family:"Firasansmedium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 16px;
+}
