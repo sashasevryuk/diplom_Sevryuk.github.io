@@ -997,3 +997,15 @@ textarea{
     margin: auto;
 }
 
+.question_form_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.test_navigation_items div.comleated_task{
+    background-color: #147E4B;
+    color: #ffffff;
+}
