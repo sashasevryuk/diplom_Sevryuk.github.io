@@ -123,7 +123,24 @@
 }
 
 @media screen and (max-width: 960px){
-   
+   /*test.html*/
+   .test_info{
+       flex-direction: column;
+       justify-content: start;
+   }
+
+   .test_info_right{
+       justify-content: left;
+       margin-top: 8px;
+   }
+
+   .question_form_buttons{
+       flex-direction: column;
+   }
+
+   .question_form_buttons button{
+       margin-bottom: 8px;
+   }
 }
 
 @media screen and (max-width: 930px){
@@ -368,6 +385,12 @@
     .stat2.test,
     .stat3.test{
         width: 200px;
+    }
+
+    /*test.html*/
+    .test_info_left_number p{
+        font-size: 12px;
+        font-weight: 14px;
     }
 }
 
