@@ -164,7 +164,25 @@
 }
 
 @media screen and (max-width: 750px){
+    /*index.html*/
+    .start_page_content{
+        width: 500px;
+    }
+    
+    .start_page_logo img {
+        height: 25px;
+    }
 
+    .start_page_title{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .start_page_text{
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 32px;
+    }
 }
     
 @media screen and (max-width: 720px){
