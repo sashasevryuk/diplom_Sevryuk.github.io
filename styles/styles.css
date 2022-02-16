@@ -519,7 +519,7 @@ body{
     line-height: 19px;
     color: #000000;
     padding-bottom: 8px;
-    margin-top: 32px;
+    /*margin-top: 32px;*/
 }
 
 .results_text{
@@ -1023,6 +1023,10 @@ textarea{
 
 .test_info_left_number.marg{
     margin-right: 16px;
+}
+
+.test_button{
+    margin-bottom: 32px;
 }
 
 .question_text{
@@ -1650,6 +1654,7 @@ a:hover{
     margin-left: 32px;
     margin-bottom: -16px;
     margin-top: 14px;
+    margin-right: 32px;
     font-family: "Firasansregular";
     font-size: 12px;
 }
