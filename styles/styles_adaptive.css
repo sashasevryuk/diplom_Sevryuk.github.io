@@ -108,6 +108,24 @@
         font-size: 12px;
         line-height: 14px;
     }
+
+    /*support*/
+    .support,
+    .support_txt{
+        width: auto;
+    }
+
+    .support_form_item input, textarea {
+        width: 400px;
+    }
+
+    .support_form_item1 .label {
+        width: 400px;
+    }
+
+    .support_form_item2 label {
+        width: 385px;
+    }
 }
 
 @media screen and (max-width: 1050px){
@@ -141,6 +159,19 @@
    .question_form_buttons button{
        margin-bottom: 8px;
    }
+
+   /*support*/
+   .support_form_item input, textarea {
+        width: 300px;
+    }
+
+    .support_form_item1 .label {
+        width: 300px;
+    }
+
+    .support_form_item2 label {
+        width: 285px;
+    }
 }
 
 @media screen and (max-width: 930px){
@@ -266,6 +297,24 @@
     .mat_img img{
         width: 400px;
     }
+
+    /*support*/
+    .support_form_item input, textarea {
+        width: 200px;
+    }
+
+    .support_form_item1 .label {
+        width: 200px;
+    }
+
+    .support_form_item2 label {
+        width: 185px;
+    }
+
+    .support_form_title{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 @media screen and (max-width: 840px){
@@ -295,7 +344,59 @@
 }
 
 @media screen and (max-width: 780px){
-    
+    /*support*/
+    .tab button{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .tab button:hover{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .tab button.active{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .tab button.active:hover{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /*support*/
+    .support_form_item,
+    .support_form_item1{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+
+    .support_form_item label,
+    .support_form_item1 label{
+        justify-content: center;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .support_form_item1{
+        margin-bottom: 8px;
+    }
+
+    .support_form_item input, textarea {
+        width: 250px;
+    }
+
+    .support_form_item1 .label {
+        width: 250px;
+    }
+
+    .support_form_item2 label {
+        width: 235px;
+    }
+
 }
 
 @media screen and (max-width: 750px){
@@ -326,10 +427,31 @@
 }
     
 @media screen and (max-width: 720px){
-  /*materials*/
-  .mat_img img{
-    width: 250px;
-}
+    /*materials*/
+    .mat_img img{
+        width: 250px;
+    }
+
+    /*support*/
+    .tab button{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .tab button:hover{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .tab button.active{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .tab button.active:hover{
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 @media screen and (max-width: 690px){
