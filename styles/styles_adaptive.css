@@ -1,6 +1,57 @@
 /*Адаптив с развернутым боковым меню до 660px,
 адаптив со свернутым боковым меню до 500px*/
 
+@media screen and (max-width: 1260px){
+    /*calendar.html*/
+    .calendar_center_title{
+        align-items: baseline;
+    }
+
+    .calendar_body_row_item{
+        width: 85px;
+        height: 80px;
+    }
+
+    .calendar_data,
+    .calendar_count{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .calendar_data{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .calendar_arrow{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .calendar_arrow img{
+        width: 30px;
+    }
+
+    .calendar_count{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .row_item_unactive,
+    .calendar_body_row_item{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .item_krug {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item_krug p {
+        padding-left: 11px;
+    }
+}
 
 @media screen and (max-width: 1230px){
     /*start.html*/
@@ -60,7 +111,53 @@
 }
 
 @media screen and (max-width: 1110px){
-   
+    /*calendar.html*/
+    .calendar_body_row_item{
+        width: 65px;
+        height: 60px;
+    }
+
+    .calendar_data,
+    .calendar_count{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .calendar_data{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .calendar_arrow{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .calendar_arrow img{
+        width: 25px;
+    }
+
+    .calendar_count{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .row_item_unactive,
+    .calendar_body_row_item{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .item_krug {
+        width: 25px;
+        height: 25px;
+    }
+
+    .item_krug p {
+        padding-left: 5px;
+        padding-top: 3px;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 1080px){
@@ -171,6 +268,58 @@
 
     .support_form_item2 label {
         width: 285px;
+    }
+
+    /*calendar.html*/
+    .calendar_title{
+        margin-bottom: 16px;
+    }
+
+    .calendar_body_row_item{
+        width: 45px;
+        height: 40px;
+    }
+
+    .calendar_data,
+    .calendar_count{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .calendar_data{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .calendar_arrow{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .calendar_arrow img{
+        width: 20px;
+    }
+
+    .calendar_count{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .row_item_unactive,
+    .calendar_body_row_item{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .item_krug {
+        width: 20px;
+        height: 20px;
+    }
+
+    .item_krug p {
+        padding-left: 3px;
+        padding-top: 3px;
+        font-size: 10px;
     }
 }
 
@@ -356,6 +505,61 @@
         font-size: 18px;
         line-height: 22px;
     }
+
+    /*calendar.html*/
+    .calendar_title{
+        margin-bottom: 16px;
+    }
+
+    .calendar_body_row_item{
+        width: 35px;
+        height: 40px;
+    }
+
+    .calendar_data,
+    .calendar_count{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .calendar_data{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .calendar_arrow{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .calendar_arrow img{
+        width: 20px;
+    }
+
+    .calendar_count{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .row_item_unactive,
+    .calendar_body_row_item{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .item_krug {
+        width: 20px;
+        height: 20px;
+    }
+
+    .item_krug p {
+        padding-left: 3px;
+        padding-top: 3px;
+        font-size: 10px;
+    }
+
+
+    
 }
 
 @media screen and (max-width: 780px){
