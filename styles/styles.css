@@ -1,17 +1,19 @@
+/*Подключение шрифтов*/
 @font-face{
     font-family: "Firasansmedium";
-    src: url("/fonts/Firasansregular.ttf") format("truetype");
+    src: url("../fonts/Firasansmedium.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face{
     font-family: "Firasansregular";
-    src: url("/fonts/Firasansregular.ttf") format("truetype");
+    src: url("../fonts/Firasansregular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
+/*Общие настройки для всех файлов*/
 a:hover{
     text-decoration: none;
 }
@@ -33,6 +35,105 @@ body{
     height: 100%;
 }
 
+.name_page_text a{
+    color: #000000;
+}
+
+.name_page_text a:hover{
+    text-decoration: underline;
+}
+
+/*Кнопки*/
+.button{
+    font-family: "Firasansregular";
+    border: 1px solid #00943f;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.4px;
+    color: #147E4B;
+    padding: 10px 25px 11px 25px;
+    box-shadow: 0 2px 1px 0 #00943F;
+    background-color: #ffffff;
+    white-space: nowrap;
+}
+
+.min{
+    font-size: 14px;
+    padding: 11px 25px 11px 25px;
+    line-height: 17px;
+    font-weight: normal;
+    letter-spacing: -0.4px;
+}
+
+.button:hover, .button:focus{
+    outline: none;
+    background-color: #45A73E;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.button:active{
+    background-color: #147E4B;
+}
+
+/*Плашки*/
+.plushka{
+    border: 1px solid #B2D6BB;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.plushka_main_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plushka_img{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    flex-grow: 1;
+    padding-bottom: 8px;
+}
+
+.plushka_txt{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 24px;
+    flex-grow: 1;
+}
+
+.plushka_txt_title{
+    font-family: "Firasansmedium";
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    letter-spacing: -0.4px;
+}
+
+.plushka_txt_text{
+    font-family: "Firasansregular";
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.4px;
+}
+
+.plushka_button{
+    display: flex;
+    align-items: center;
+}
+
+/*Левая часть экрана страницы с навигационным меню*/
 .main_container_left_part{
     height: 100%;
     background-color: #ffffff;
@@ -105,6 +206,8 @@ body{
     padding: 4px;
 }
 
+/*Пункт навигационного меню "Выход"*/
+
 .navigation_exit{
     display: flex;
     flex-direction: row;
@@ -135,6 +238,66 @@ body{
     color: #147E4B;
 }
 
+/*уезжающее и выезжающее боковое меню*/
+
+.main_container_left_part2{
+    height: 100%;
+    width: 100px;
+    box-shadow: 5px 0px 10px 0px rgba(0, 148, 63, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 1;
+}
+
+.left_part_logo2{
+    height: 104px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_exit2{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+
+.navigation_exit{
+    position: absolute;
+    left: 94px;
+    bottom: 0;
+}
+
+/*кнопка скрытия и демонстрации меню*/
+.btn.btn1{
+    width: 100px;
+}
+
+.btn.btn2, .btn.btn1{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.block {
+    display: none;
+}
+
+.block.active {
+    display: block;
+}
+
+/*Правая часть экрана страницы*/
+
 .main_container_right_part{
     height: 100%;
     display: flex;
@@ -144,6 +307,7 @@ body{
     flex-grow: 1;
 }
 
+/*Шапка сайта*/
 .right_part_navigation{
     background-color: #ffffff;
     height: 104px;
@@ -202,6 +366,7 @@ body{
     border-radius: 5px;
 }
 
+/*Основной контент страницы*/
 .main_page{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(20, 126, 75, 0.2);
@@ -225,68 +390,68 @@ body{
     border-radius: 10px;
 }
 
-/*уезжающее и выезжающее боковое меню*/
-
-.main_container_left_part2{
-    height: 100%;
-    width: 100px;
-    box-shadow: 5px 0px 10px 0px rgba(0, 148, 63, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    z-index: 1;
-}
-
-.left_part_logo2{
-    height: 104px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-}
-
-.navigation_exit2{
-    width: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 24px;
-    padding-left: 0;
-    padding-right: 0;
-    position: absolute;
-    left: 0px;
-    bottom: 0;
-}
-
-.navigation_exit{
-    position: absolute;
-    left: 94px;
-    bottom: 0;
-}
-
-.btn.btn1{
-    width: 100px;
-}
-
-.btn.btn2, .btn.btn1{
-    display: flex;
-    justify-content: end;
-    cursor: pointer;
-    margin-top: 60px;
-}
-
-.block {
-    display: none;
-}
-
-.block.active {
-    display: block;
-}
-
 .right_part_text_area{
     margin: 32px 32px 0 32px;
 }
 
-/*page_mistake_404*/
+/*Стартовая страница*/
+.start_page{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 100%;
+    align-items: center;
+}
+
+.start_page_content{
+    display: flex;
+    flex-direction: column;
+    width: 716px;
+    height: 332px;
+}
+
+.start_page_logo{
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.start_page_logo img{
+    height: 35px;
+}
+
+.start_page_title{
+    font-family: "Firasansmedium";
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.4px;
+    color: #147E4B;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.start_page_text{
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 56px;
+}
+
+.start_page_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.start_page_button_1{
+    padding-right: 48px;
+}
+
+/*Страница ошибки 404*/
 
 .mistake404{
     display: flex;
@@ -327,15 +492,7 @@ body{
     text-align: center;
 }
 
-.name_page_text a{
-    color: #000000;
-}
-
-.name_page_text a:hover{
-    text-decoration: underline;
-}
-
-/*page materials*/
+/*Страница учебные материалы*/
 .materials, .results, .testing{
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(20, 126, 75, 0.2);
@@ -345,6 +502,8 @@ body{
 .materials_plushka{
     margin-bottom: 16px;
 }
+
+/*Страница результаты*/
 
 .results_title{
     font-family:"Firasansmedium";
@@ -368,32 +527,7 @@ body{
     padding-bottom: 16px;
 }
 
-.bread{
-    margin-left: 32px;
-    margin-bottom: -16px;
-    margin-top: 14px;
-    font-family: "Firasansregular";
-    font-size: 12px;
-}
-
-.bread a{
-    color: #000000;
-    text-decoration-line: underline;
-    color: #147E4B;
-}
-
-.bread a:hover{
-    text-decoration:solid;
-}
-
-.active_menu_item img{
-    background-color: #147E4B;
-}
-
-.active_menu_text p{
-    color:#147E4B;
-}
-
+/*Страница личного кабинета*/
 .user_header{
     display: flex;
     flex-direction: row;
@@ -422,9 +556,20 @@ body{
     color: #000000;
 }
 
+/*Активные пункты меню и пиктограмы*/
 .pictograms_item.active_menu_item img{
     border-radius: 100px;
 }
+
+.active_menu_item img{
+    background-color: #147E4B;
+}
+
+.active_menu_text p{
+    color:#147E4B;
+}
+
+/*Главная страница*/
 
 .main_page_stat{
     display: flex;
@@ -491,6 +636,7 @@ body{
     margin-bottom: 16px;
 }
 
+/*Страница события*/
 .event_title{
     font-family:"Firasansmedium";
     font-weight: 500;
@@ -507,6 +653,8 @@ body{
     color: #000000;
     margin-bottom: 24px;
 }
+
+/*Страница с учебным материалом*/
 
 .name_material_title{
     display: flex;
@@ -566,6 +714,7 @@ body{
     margin-bottom: 16px;
 }
 
+/*Страница поддержки*/
 .support_txt{
     font-family:"Firasansregular";
     font-size: 12px;
@@ -654,7 +803,6 @@ textarea:focus{
     border-radius: 10px;
 }
 
-/*.support_form_item1 .form-group{padding:1em;margin:1em}*/
 .support_form_item1 input[type=file]{
     outline:0;
     opacity:0;
@@ -751,6 +899,7 @@ textarea{
     margin-bottom: 32px;
 }
 
+/*Страница тестирования*/
 .stat1.test,
 .stat2.test,
 .stat3.test{
@@ -774,7 +923,6 @@ textarea{
     justify-content: center;
 }
 
-/*test*/
 .test_name{
     font-family:"Firasansmedium";
     font-weight: 500;
@@ -991,6 +1139,101 @@ textarea{
     background-color: #f6faf8;
 }
 
+/*Модальные окна*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    scrollbar-color: #147E4B transparent;
+    scrollbar-width: thin;
+    background-color: rgba(6, 56, 32, 0.25);
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: transparent;
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color: #147E4B;
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: #147E4B;
+    width: 423px;
+    border-radius: 10px; 
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; 
+    display:inline-block; 
+    vertical-align:middle; 
+    position:relative
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+    
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal_title{
+    font-family: "Firasansregular";
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    margin: auto;
+    padding-bottom: 8px;
+}
+
+.modal_text{
+    font-family: "Firasansregular";
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin: auto;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.modal_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal_button1{
+    padding-right: 24px;
+}
+
+.modal::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+}
+
 .modal_button1.support{
     padding-right: 0px;
 }
@@ -1003,6 +1246,152 @@ textarea{
     width: 469px;
 }
 
+/*Модальное окно регистрации и авторизации*/
+
+.modal-content.reg{
+    width: 455px;
+    height: 691px;
+}
+
+.modal_form_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_content_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 16px;
+}
+
+.item_check{
+    justify-content: start;
+}
+
+.form_content_item input{
+    width: 247px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Firasansregular";
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.4px;
+    color: #000000;
+}
+
+.form_content_item input:active,
+.form_content_item input:focus,
+.form_content_item input:hover{
+    border: none;
+    outline: none;
+}
+
+.form_content_item input:focus{
+    background-color: #e2fff1;
+}
+
+.item_check input{
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #B2D6BB;
+    box-sizing: border-box;
+    border-radius: 5px; 
+}
+
+input::placeholder{
+    color: #B2D6BB;
+}
+
+input:focus::-webkit-input-placeholder { 
+    color:transparent; 
+}
+
+input:focus:-moz-placeholder { 
+    color:transparent; 
+}
+
+input:focus::-moz-placeholder { 
+    color:transparent; 
+}
+
+input:focus:-ms-input-placeholder { 
+    color:transparent; 
+}
+
+.content_item_text{
+    font-family: "Firasansmedium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.item_check div{  
+    height: 26px;
+    font-family: "Firasansregular";
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 0;
+}
+
+.regbutton{
+    padding-top: 8px;
+    padding-right: 0;
+}
+
+.ok_reg{
+    width: 446px;
+    height: 215px;
+}
+
+.ok_but{
+    padding-right: 0;
+}
+
+.modal-content.avt{
+    width: 423px;
+    height: 402px;
+}
+
+.dop_check{
+    padding: 0 16px 24px 32px;
+}
+
+#avtBtn2{
+    padding-right: 0;
+    margin-bottom: 24px;
+}
+
+.add_avt a p{
+    font-family: "Firasansregular";
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Страница попытки*/
 .try_title{
     font-family:"Firasansmedium";
     font-weight: 500;
@@ -1057,4 +1446,213 @@ textarea{
 .button.try{
     margin-top: 8px;
     margin-bottom: 16px;
+}
+
+/*Страница с календарем*/
+.calendar{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(20, 126, 75, 0.2);
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tab {
+    overflow: hidden;
+    width: 50%;
+}
+
+.tablinks{
+    margin: auto;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 100%;
+    height: 65px;
+    background-color: #ffffff;
+    font-family: "Firasansmedium";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    color: #000000;
+}
+
+.tab button:hover {
+    background: #147E4B;
+    font-family: "Firasansregular";
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+}
+
+.tab button.active {
+    background: #147E4B;
+    font-family: "Firasansregular";
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+}
+
+.tabcontent {
+    display: none;
+    padding: 32px 32px 16px 32px;
+}
+
+.calendar_plashka{
+    margin-bottom: 16px;
+}
+
+.content_calendar{
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+.calendar_center_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar_arrow{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.calendar_count{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.calendar_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar_body_row{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.calendar_arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calendar_body_row_item{
+    width: 105px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #147E4B;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(20, 126, 75, 0.2);
+    border-radius: 10px;
+    margin-right: 12px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar_body_row_item div{
+    padding: 0 0 0 4px;
+}
+
+.row_item_unactive{
+    color: #B2D6BB;
+}
+
+.item_today{
+    background: #147E4B;
+    color: #ffffff;
+}
+
+.item_krug{
+    width: 50px;
+    height: 50px;
+    background: #147E4B;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 0;
+}
+
+.item_krug p{
+    color: #ffffff;
+    padding-left: 14px;
+    padding-top: 8px;
+}
+
+.calendar_body_row_item.last{
+    margin-right: 0;
+}
+
+.calendar_data{
+    font-family: "Firasansmedium";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.calendar_count{
+    font-family: "Firasansregular";
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.centre_text{
+    font-family: "Firasansmedium";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/*Хлебные крошки*/
+.bread{
+    margin-left: 32px;
+    margin-bottom: -16px;
+    margin-top: 14px;
+    font-family: "Firasansregular";
+    font-size: 12px;
+}
+
+.bread a{
+    color: #000000;
+    text-decoration-line: underline;
+    color: #147E4B;
+}
+
+.bread a:hover{
+    text-decoration:solid;
 }
