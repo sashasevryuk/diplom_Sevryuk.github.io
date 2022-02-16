@@ -16,5 +16,4 @@ function openPage(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-//Отображение вкладки по умолчанию при открытии страницы
 document.getElementById("defaultOpen").click();
