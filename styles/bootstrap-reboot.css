@@ -316,6 +316,11 @@ output {
   display: inline-block;
 }
 
+p{
+  margin: 0;
+  padding: 0;
+}
+
 summary {
   display: list-item;
   cursor: pointer;
@@ -329,10 +334,3 @@ template {
   display: none !important;
 }
 /*# sourceMappingURL=bootstrap-reboot.css.map */
-
-/*мои стили, прописанные вручную*/
-p{
-  margin: 0;
-  padding: 0;
-}
-

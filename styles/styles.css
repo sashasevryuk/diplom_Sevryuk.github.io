@@ -31,7 +31,6 @@ body{
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     height: 100%;
-    /*margin: 0 112px;*/
 }
 
 .main_container_left_part{
@@ -42,7 +41,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /*тестовый вариант, чтобы этот блок был над остальными*/
     z-index: 1;
 }
 
@@ -64,7 +62,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*width: 280px;*/
 }
 
 .navigation_menu{
@@ -103,7 +100,6 @@ body{
 
 .item_ico img{
     height: 40px;
-    /* padding-right: 14px; */
     background-color: white;
     border-radius: 5px;
     padding: 4px;
@@ -145,7 +141,6 @@ body{
     flex-direction: column;
     justify-content: start;
     display: flex;
-    /*свойство, для того, чтобы правая часть контента занимала всю оставшуюся ширину рабочего экрана*/
     flex-grow: 1;
 }
 
@@ -213,31 +208,22 @@ body{
     padding: 32px 32px 16px 32px;
 }
 
-/*стилизация полосы прокрутки блока*/
 .right_part_content{
     height: 100%;
     overflow-y: scroll;
-    /*свойства, прописанное специально для mozila fire fox, так как описанные ниже свойства там не работают*/
-    /*цвета полосы прокрутки*/
     scrollbar-color: #147E4B transparent;
-    /*скрытие стрелочек на полосе прокрутки*/
     scrollbar-width: thin;
 }
 
-/*сама полоса*/
 .right_part_content::-webkit-scrollbar{
     width: 7px;
     background-color: transparent;
 }
 
-/*ползунок полосы*/
 .right_part_content::-webkit-scrollbar-thumb {
     background-color: #147E4B;
     border-radius: 10px;
 }
-
-
-
 
 /*уезжающее и выезжающее боковое меню*/
 
@@ -248,7 +234,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /*тестовый вариант, чтобы этот блок был над остальными*/
     z-index: 1;
 }
 
@@ -297,18 +282,9 @@ body{
     display: block;
 }
 
-
-
-
-
-
-
-
-
 .right_part_text_area{
     margin: 32px 32px 0 32px;
 }
-
 
 /*page_mistake_404*/
 
@@ -350,9 +326,6 @@ body{
     color: #000000;
     text-align: center;
 }
-
-
-
 
 .name_page_text a{
     color: #000000;
@@ -413,14 +386,12 @@ body{
     text-decoration:solid;
 }
 
-
 .active_menu_item img{
     background-color: #147E4B;
 }
 
 .active_menu_text p{
     color:#147E4B;
-    /*text-decoration-line: underline;*/
 }
 
 .user_header{
@@ -595,9 +566,6 @@ body{
     margin-bottom: 16px;
 }
 
-
-
-
 .support_txt{
     font-family:"Firasansregular";
     font-size: 12px;
@@ -605,7 +573,6 @@ body{
     letter-spacing: -0.4px;
     color: #000000;
     width: 642px;
-    /*text-align: center;*/
     margin-bottom: 32px;
 }
 
@@ -638,7 +605,6 @@ textarea{
 textarea:active,
 textarea:focus,
 textarea:hover{
-    
     outline: none;
 }
 
@@ -665,11 +631,9 @@ textarea:focus{
     color: #000000;
 }
 
-
 .support_form{
     display: flex;
     flex-direction: column;
-
 }
 
 .support_form_item, 
@@ -704,7 +668,6 @@ textarea:focus{
     border: 1px dashed #147E4B;
     border-radius: 10px;
     display:block;
-    /*padding:1.2em;*/
     transition:border 300ms ease;
     cursor:pointer;
     text-align:center;
@@ -810,8 +773,6 @@ textarea{
     flex-direction: row;
     justify-content: center;
 }
-
-
 
 /*test*/
 .test_name{
@@ -931,7 +892,6 @@ textarea{
 }
 
 .question_form_answer input{
-    
     height: 12px;
     background: #FFFFFF;
     border: 1px solid #147E4B;
@@ -1043,7 +1003,6 @@ textarea{
     width: 469px;
 }
 
-
 .try_title{
     font-family:"Firasansmedium";
     font-weight: 500;
@@ -1062,7 +1021,6 @@ textarea{
 }
 
 .try_result_container{
-    /*height: 88px;*/
     background: #D6B2B2;
     border-radius: 10px;
     margin-top: 16px;

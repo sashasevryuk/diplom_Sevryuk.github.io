@@ -25,7 +25,6 @@
     padding: 10px 25px 11px 25px;
     box-shadow: 0 2px 1px 0 #00943F;
     background-color: #ffffff;
-    /*запрет переноса текста в кнопке на новую строку*/
     white-space: nowrap;
 }
 
