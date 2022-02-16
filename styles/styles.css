@@ -1659,7 +1659,6 @@ a:hover{
 
 /*Кнопка выхода при наведении*/
 .exit_text a:hover {
-    text-decoration-line: underline;
     color: #147E4B;
 }
 

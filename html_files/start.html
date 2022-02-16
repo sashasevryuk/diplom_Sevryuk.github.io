@@ -2,157 +2,353 @@
 <html lang="ru">
 
 <head>
-    <title>Система обучения и тестирования сотрудников ОАО "АСБ Беларусбанк"</title>
+    <title>Главная страница</title>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
     <link rel="stylesheet" type="text/css" href="../styles/bootstrap-reboot.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/plushka.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/button.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/modal_window.css" media="screen">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/left_menu.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-    <div class="start_page">
-        <div class="start_page_content">
-            <div class="start_page_logo">
-                <img src="../images/logotype.png" alt="логотип">
-            </div>
-            <div class="start_page_title">Добро пожаловать!</div>
-            <div class="start_page_text">Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба
-                Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба </div>
-            <div class="start_page_buttons">
-                <div class="start_page_button_1" id="regBtn"><button class="button">Зарегистрироваться</button></div>
-                <div class="start_page_button_2" id="avtBtn"><button class="button">Войти</button></div>
-            </div>
-        </div>
-    </div>
-    <!--Модальное окно регистрации-->
-    <div id="registrationModal" class="modal">
-        <div class="modal-content reg">
-            <div class="modal-body">
-                <div class="modal_title">
-                    <p>Форма регистрации</p>
-                </div>
-                <div class="modal_text">
-                    <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
-                </div>
-                <div class="modal_form">
-                    <form class="modal_form_content" id="form1">
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="familia"> Фамилия*</label>
-                            <input type="text" id="familia" required placeholder="Иванов">
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="Ima">Имя *</label>
-                            <input type="text" id="Ima" required placeholder="Иван">
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="Otdel">О тдел*</label>
-                            <input type="text" id="Otdel" required placeholder="Отдел разработки ПО">
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="Dolznost">Должность*</label>
-                            <input type="text" id="Dolznost" required placeholder="Web-разработчик">
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="Email">E-mail*</label>
-                            <input type="text" id="Email" required placeholder="ivanov.ivan@gmail.com">
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="Parol">Пароль*</label>
-                            <input type="text" id="Parol" required>
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="Povtor_parola">Повтор пароля*</label>
-                            <input type="text" id="Povtor_parola" required>
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="Telefon">Телефон*</label>
-                            <input type="text" id="Telefon" required placeholder="+375 29 111 11 11">
-                        </div>
-
-                        <div class="form_content_item item_check">
-                            <input type="checkbox" required>
-                            <div>
-                                <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
-                                    рыба</p>
-                            </div>
-                        </div>
-                        <div class="form_content_item item_check">
-                            <input type="checkbox">
-                            <div>
-                                <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
-                                    рыба</p>
-                            </div>
-                        </div>
-                        <div class="modal_buttons">
-                            <div class="modal_button1 regbutton" id="regBtn2"><button type="submit" class="button"
-                                    onclick="document.location='../index.html'">Зарегистрироваться</button>
-                            </div>
-                        </div>
-                    </form>
+    <div class="main_container">
+        <div class="main_container_left_part block active" id="block1">
+            <div class="left_part_logo">
+                <div class="logo">
+                    <a href="start.html"><img src="../images/logotype.png" alt="логотип"></a>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Модальное окно авторизации-->
-    <div id="avtorizationModal" class="modal">
-        <div class="modal-content avt">
-            <div class="modal-body">
-                <div class="modal_title">
-                    <p>Форма авторизации</p>
-                </div>
-                <div class="modal_text">
-                    <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
-                </div>
-                <div class="modal_form">
-                    <form class="modal_form_content" id="form2">
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="avtEmail">E-mail*</label>
-                            <input type="text" id="avtEmail" required placeholder="ivanov.ivan@gmail.com">
-                        </div>
-                        <div class="form_content_item">
-                            <label class="content_item_text" for="avtParol">Пароль*</label>
-                            <input type="text" id="avtParol" required>
-                        </div>
-                        <div class="form_content_item item_check dop_check">
-                            <input type="checkbox">
-                            <div>
-                                <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
-                                    рыба</p>
+            <div class="left_part_navigation">
+                <div class="navigation_menu">
+                    <a href="../html_files/calendar.html">
+                        <div class="menu_item first_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/calendar1.png" alt="расписание">
+                            </div>
+                            <div class="item_text">
+                                <p>Расписание</p>
                             </div>
                         </div>
-                        <div class="modal_buttons">
-                            <div class="modal_button1 avtbutton" id="avtBtn2"><button type="submit" class="button"
-                                    onclick="document.location='../index.html'">Войти</button>
+                    </a>
+                    <a href="../html_files/materials.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/materials1.png" alt="учебные материалы">
+                            </div>
+                            <div class="item_text">
+                                <p>Учебные материалы</p>
                             </div>
                         </div>
-                    </form>
-                    <div class="add_avt">
+                    </a>
+                    <a href="../html_files/testing.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/testing1.png" alt="тестирование">
+                            </div>
+                            <div class="item_text">
+                                <p>Тестирование</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../html_files/results.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/results1.png" alt="результаты">
+                            </div>
+                            <div class="item_text">
+                                <p>Результаты</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../html_files/support.html">
+                        <div class="menu_item last_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/question1.png" alt="поддержка">
+                            </div>
+                            <div class="item_text">
+                                <p>Поддержка</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn btn2" data-num="2">
+                    <img src="../images/hide_menu.png" alt="скрыть меню">
+                </div>
+                <div class="navigation_exit" id="exitBtn">
+                    <div class="exit_ico">
+                        <a href="#"><img src="../images/exit1.png" alt="выход"></a>
+                    </div>
+                    <div class="exit_text">
                         <a href="#">
-                            <p>Не получается войти?</p>
+                            <p>Выйти</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Модальное окно уведомляющее о успешной регистрации-->
-    <!--<div id="registrationModal2" class="modal">
-        <div class="modal-content ok_reg">
-            <div class="modal-body">
-                <div class="modal_title">
-                    <p>Вы успешно зарегистрировались</p>
+
+
+        <div class="main_container_left_part2 block" id="block2">
+            <div class="left_part_logo2">
+                <div class="logo">
+                    <a href="start.html"><img src="../images/logo.png" alt="логотип"></a>
                 </div>
-                <div class="modal_text">
-                    <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
+            </div>
+            <div class="left_part_navigation">
+                <div class="navigation_menu">
+                    <a href="../html_files/calendar.html">
+                        <div class="menu_item first_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/calendar1.png" alt="расписание">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../html_files/materials.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/materials1.png" alt="учебные материалы">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../html_files/testing.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/testing1.png" alt="тестирование">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../html_files/results.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/results1.png" alt="результаты">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../html_files/support.html">
+                        <div class="menu_item last_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/question1.png" alt="поддержка">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="modal_buttons">
-                    <div class="modal_button1 ok_but"><button class="button" onclick="document.location='../html_files/button.html'">Войти</button></div>
+                <div class="btn btn1" data-num="1">
+                    <img src="../images/hide_menu1.png" alt="скрыть меню">
+                </div>
+                <div class="navigation_exit2" id="exitBtn2">
+                    <div class="exit_ico">
+                        <a href="#"><img src="../images/exit1.png" alt="выход"></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>-->
-    <script src="../js/modal_start.js"></script>
+
+        <!--Модальное окно выход-->
+        <div id="exitModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal_title">
+                        <p>Вы уверены, что хотите выйти?</p>
+                    </div>
+                    <div class="modal_text">
+                        <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                            рыба</p>
+                    </div>
+                    <div class="modal_buttons">
+                        <div class="modal_button1"><button class="button modal_exit_close_btn">Отмена</button></div>
+                        <div class="modal_button2"> <button class="button"
+                                onclick="document.location='../index.html'">Да</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main_container_right_part">
+            <div class="right_part_navigation">
+                <div class="right_part_name_page">
+                    <div class="name_page_text">
+                        <p><b>Система обучения и тестирования сотрудников ОАО "АСБ Беларусбанк"</b></p>
+                    </div>
+                </div>
+                <div class="right_part_pictograms">
+                    <div class="pictograms_item pictograms_item_first">
+                        <a href="#"><img src="../images/search1.png" alt="поиск"></a>
+                    </div>
+                    <div class="pictograms_item">
+                        <a href="#"><img src="../images/notification1.png" alt="уведомления"></a>
+                    </div>
+                    <div class="pictograms_item">
+                        <a href="../html_files/user.html"><img src="../images/user1.png" alt="личный кабинет"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right_part_content">
+                <div class="right_part_text_area main_page">
+                    <div class="main_page_stat">
+                        <div class="stat1">
+                            <div class="number">
+                                <p>7</p>
+                            </div>
+                            <div class="stat_txt">
+                                <p>пройдено тестов</p>
+                            </div>
+                        </div>
+                        <div class="stat2">
+                            <div class="number">
+                                <p>12</p>
+                            </div>
+                            <div class="stat_txt">
+                                <p>изучено учебных <br>материалов</p>
+                            </div>
+                        </div>
+                        <div class="stat3">
+                            <div class="number">
+                                <p>127</p>
+                            </div>
+                            <div class="stat_txt">
+                                <p>проведено дней <br>в системе</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_page_txt">
+                        <p>Задача организации, в особенности же новая модель организационной деятельности влечет за
+                            собой процесс внедрения и модернизации существенных финансовых и административных условий.
+                            Не следует, однако забывать, что консультация с широким активом в значительной степени
+                            обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача
+                            организации, в особенности же новая модель организационной деятельности влечет за собой
+                            процесс внедрения и модернизации существенных финансовых и административных условий. Не
+                            следует, однако забывать, что консультация с широким активом в значительной степени
+                            обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+                    </div>
+                    <div class="main_page_img"><img src="../images/main_page.png" alt="фото плашки"></div>
+                    <div class="main_page_title">
+                        <p>Популярные учебные материалы</p>
+                    </div>
+                    <div class="plushka materials_plushka">
+                        <div class="plushka_main_content">
+                            <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки"></div>
+                            <div class="plushka_txt">
+                                <div class="plushka_txt_title">
+                                    <p>Название учебного материала</p>
+                                </div>
+                                <div class="plushka_txt_text">
+                                    <p>Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plushka_button"><button class="button min"
+                                onclick="document.location='../html_files/name_material.html'">Изучить</button></div>
+                    </div>
+                    <div class="plushka materials_plushka">
+                        <div class="plushka_main_content">
+                            <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки"></div>
+                            <div class="plushka_txt">
+                                <div class="plushka_txt_title">
+                                    <p>Название учебного материала</p>
+                                </div>
+                                <div class="plushka_txt_text">
+                                    <p>Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plushka_button"><button class="button min"
+                                onclick="document.location='../html_files/name_material.html'">Изучить</button></div>
+                    </div>
+                    <div class="plushka materials_plushka">
+                        <div class="plushka_main_content">
+                            <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки"></div>
+                            <div class="plushka_txt">
+                                <div class="plushka_txt_title">
+                                    <p>Название учебного материала</p>
+                                </div>
+                                <div class="plushka_txt_text">
+                                    <p>Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plushka_button"><button class="button min"
+                                onclick="document.location='../html_files/name_material.html'">Изучить</button></div>
+                    </div>
+                    <div class="plushka materials_plushka">
+                        <div class="plushka_main_content">
+                            <div class="plushka_img"><img src="../images/img_plushka.png" alt="фото плашки"></div>
+                            <div class="plushka_txt">
+                                <div class="plushka_txt_title">
+                                    <p>Название учебного материала</p>
+                                </div>
+                                <div class="plushka_txt_text">
+                                    <p>Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба Текст рыба Текст
+                                        рыба Текст рыба</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plushka_button"><button class="button min"
+                                onclick="document.location='../html_files/name_material.html'">Изучить</button></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/modal_exit.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
