@@ -20,6 +20,7 @@ a:hover{
 
 html{
     height: 100%;
+    overflow:hidden;
 }
 
 body{
@@ -393,6 +394,12 @@ body{
 .right_part_text_area{
     margin: 32px 32px 0 32px;
 }
+
+/**/
+.right_part_text_area.main_page{
+    width: auto;
+}
+/**/
 
 /*Стартовая страница*/
 .start_page{

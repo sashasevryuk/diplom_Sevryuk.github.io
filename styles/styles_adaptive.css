@@ -1,0 +1,265 @@
+@media screen and (max-width: 1230px){
+    /*start.html*/
+    .stat1,
+    .stat2,
+    .stat3{
+        width: 200px;
+    }
+
+    .main_page_img img{
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+   
+}
+
+@media screen and (max-width: 1170px){
+    /*start.html*/
+    .main_page_img img{
+        width: 700px;
+    }
+    .number{
+        font-size: 40px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 1140px){
+    /*start.html*/
+    .main_page_img img{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 1110px){
+   
+}
+
+@media screen and (max-width: 1080px){
+    /*start.html*/
+    .stat1,
+    .stat2,
+    .stat3{
+        width: 150px;
+        height: 100px;
+    }
+
+    .number{
+        font-size: 32px;
+        line-height: 34px;
+    }
+    
+    .stat_txt{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .main_page_img img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    
+}
+
+@media screen and (max-width: 1020px){
+    
+}
+
+@media screen and (max-width: 990px){
+    
+}
+
+@media screen and (max-width: 960px){
+   
+}
+
+@media screen and (max-width: 930px){
+    /*start.html*/
+    .main_page_stat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat1,
+    .stat2{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .stat1,
+    .stat2,
+    .stat3{
+        width: 250px;
+        height: 150px;
+    }
+    
+    .number{
+        font-size: 48px;
+        line-height: 58px;
+    }
+    
+    .stat_txt{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .main_page_img img{
+        width: 450px;
+    }
+
+    .main_page_stat,
+    .main_page_img{
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    /*start.html*/
+    .plushka_img{
+        display: none;
+    }
+
+    .plushka_txt{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .plushka.materials_plushka{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plushka_button{
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    /*start.html*/
+    .main_page_img img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 840px){
+    
+}
+
+@media screen and (max-width: 810px){
+    /*start.html*/
+    .main_page_img img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px){
+    
+}
+
+@media screen and (max-width: 750px){
+
+}
+    
+@media screen and (max-width: 720px){
+  
+}
+
+@media screen and (max-width: 690px){
+    /*start.html*/  
+    .stat1,
+    .stat2,
+    .stat3{
+        width: 200px;
+    }
+
+    .pictograms_item img {
+        width: 30px;
+    }
+
+    .name_page_text{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .pictograms_item{
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    /*start.html*/
+    .stat1,
+    .stat2,
+    .stat3{
+        width: 150px;
+        height: 100px;
+    }
+
+    .number{
+        font-size: 32px;
+        line-height: 34px;
+    }
+    
+    .stat_txt{
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+}
+
+@media screen and (max-width: 600px){
+    /*start.html*/
+    .name_page_text{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .pictograms_item{
+        margin-left: 6px;
+    }
+}
+@media screen and (max-width: 570px){
+    /*start.html*/
+    .pictograms_item{
+        width: 25px;
+        margin-left: 4px;
+    }
+
+    .stat1,
+    .stat2,
+    .stat3{
+        width: 100px;
+        height: 100px;
+    }
+
+    .number{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    .stat_txt{
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
+@media screen and (max-width: 540px){
+    
+}
+@media screen and (max-width: 510px){
+    
+}
+@media screen and (max-width: 500px){
+    
+}
+
+
