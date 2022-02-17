@@ -3,8 +3,10 @@
 
 @media screen and (max-width: 1260px){
     /*calendar.html*/
-    .calendar_center_title{
+    .calendar_center_title,
+    .calendar_title{
         align-items: baseline;
+        align-items: center;
     }
 
     .calendar_body_row_item{
@@ -76,10 +78,6 @@
     .stat3.test{
         width: 200px;
     }
-}
-
-@media screen and (max-width: 1200px){
-   
 }
 
 @media screen and (max-width: 1170px){
@@ -225,18 +223,6 @@
     }
 }
 
-@media screen and (max-width: 1050px){
-    
-}
-
-@media screen and (max-width: 1020px){
-    
-}
-
-@media screen and (max-width: 990px){
-    
-}
-
 @media screen and (max-width: 960px){
    /*test.html*/
    .test_info{
@@ -270,7 +256,14 @@
         width: 285px;
     }
 
+
     /*calendar.html*/
+
+    .calendar_center_title{
+        display: flex;
+        align-items: baseline;
+    }
+
     .calendar_title{
         margin-bottom: 16px;
     }
@@ -280,24 +273,18 @@
         height: 40px;
     }
 
-    .calendar_data,
+    .calendar_data{
+
+    }
+
     .calendar_count{
         margin-left: 4px;
         margin-right: 4px;
     }
 
-    .calendar_data{
-        font-size: 12px;
-        line-height: 14px;
-    }
-
     .calendar_arrow{
         margin-left: 2px;
         margin-right: 2px;
-    }
-
-    .calendar_arrow img{
-        width: 20px;
     }
 
     .calendar_count{
@@ -320,6 +307,20 @@
         padding-left: 3px;
         padding-top: 3px;
         font-size: 10px;
+    }
+
+    .calendar_data{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .calendar_arrow img{
+        width: 25px;
+    }
+
+    .centre_text p{
+        font-size: 16px;
+        line-height: 18px;
     }
 }
 
@@ -478,6 +479,11 @@
         margin-right: 0;
         margin-bottom: 16px;
     }
+
+    /*calendar.html*/
+    .calendar_count{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 810px){
@@ -522,18 +528,9 @@
         margin-right: 4px;
     }
 
-    .calendar_data{
-        font-size: 12px;
-        line-height: 14px;
-    }
-
     .calendar_arrow{
         margin-left: 2px;
         margin-right: 2px;
-    }
-
-    .calendar_arrow img{
-        width: 20px;
     }
 
     .calendar_count{
@@ -557,9 +554,14 @@
         padding-top: 3px;
         font-size: 10px;
     }
-
-
     
+    .calendar_data {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .calendar_arrow img{
+        width: 25px;
+    }
 }
 
 @media screen and (max-width: 780px){
@@ -657,14 +659,42 @@
         line-height: 18px;
     }
 
-    .calendar_arrow img{
-        width: 30px;
-    }
-
     .centre_text p{
         font-size: 16px;
         line-height: 18px;
     }
+}
+
+@media screen and (max-width: 730px){
+    /*calendar.html*/
+    
+
+    .calendar_body_row_item{
+        width: 25px;
+        height: 40px;
+    }
+
+   
+
+    .row_item_unactive,
+    .calendar_body_row_item{
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+    .item_krug {
+        width: 15px;
+        height: 15px;
+        margin-top: auto;
+    }
+
+    .item_krug p {
+        padding-left: 1px;
+        padding-top: 1px;
+        font-size: 9px;
+    }
+    
+    
 }
     
 @media screen and (max-width: 720px){
@@ -692,22 +722,7 @@
     .tab button.active:hover{
         font-size: 12px;
         line-height: 14px;
-    }
-
-    /*calendar.html*/
-    .calendar_data{
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    .calendar_arrow img{
-        width: 25px;
-    }
-
-    .centre_text p{
-        font-size: 14px;
-        line-height: 16px;
-    }
+    } 
 }
 
 @media screen and (max-width: 690px){
