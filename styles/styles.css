@@ -171,11 +171,12 @@ body{
 }
 
 .menu_item{
-    height: 40px;
+    /*height: 40px;*/
     display: flex;
     flex-direction: row;
     justify-content: start;
     margin-bottom: 30px;
+    padding-left: 5px;
 }
 
 .last_menu_item{
@@ -194,8 +195,8 @@ body{
 
 .item_text p{
     font-family: "Firasansregular";
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 17px;
+    line-height: 20px;
     color: #000000;
     letter-spacing: -0.4px;
 }
@@ -546,6 +547,10 @@ body{
     margin-right: 32px;
 }
 
+.pictograms_item.us img{
+    border-radius: 100px;
+}
+
 .user_title{
     font-family:"Firasansmedium";
     font-weight: 500;
@@ -564,12 +569,22 @@ body{
 }
 
 /*Активные пункты меню и пиктограмы*/
-.pictograms_item.active_menu_item img{
-    border-radius: 100px;
+.menu_item.active.menu{
+    padding: 5px 0px 5px 5px;
+    background-color: #e6ffcd;
+    border-radius: 10px;
+}
+/*
+.active_menu_item{
+    padding: 5px 0 5px 0;
+}
+*/
+.menu_item.short{
+    padding-left: 0;
 }
 
 .active_menu_item img{
-    background-color: #147E4B;
+    background-color: #e6ffcd;
 }
 
 .active_menu_text p{
