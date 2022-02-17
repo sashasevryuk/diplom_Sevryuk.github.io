@@ -1670,9 +1670,18 @@ a:hover{
 }
 
 /*Кнопка выхода при наведении*/
-.exit_text a:hover {
+.mistake_item3 a{
+    text-decoration: underline;
     color: #147E4B;
 }
+
+.exit_text a:hover,
+.mistake_item3 a:hover{
+    color: #147E4B;
+    text-decoration: none;
+}
+
+
 
 /*Центрирование лейблов на формах*/
 label.content_item_text {
