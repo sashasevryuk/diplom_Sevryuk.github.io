@@ -290,6 +290,10 @@ body{
     margin-top: 60px;
 }
 
+.btn img{
+    width: 30px;
+}
+
 .block {
     display: none;
 }
@@ -1643,14 +1647,14 @@ a:hover{
 .item_krug{
     width: 50px;
     height: 50px;
-    background: #147E4B;
+    background: #FFD940;
     border-radius: 100px;
     margin: auto;
     margin-top: 0;
 }
 
 .item_krug p{
-    color: #ffffff;
+    color: #000000;
     padding-left: 14px;
     padding-top: 8px;
 }
