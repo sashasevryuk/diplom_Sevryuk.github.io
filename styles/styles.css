@@ -290,7 +290,9 @@ body{
     margin-top: 60px;
 }
 
-
+.btn img{
+    width: 30px;
+}
 
 .block {
     display: none;
