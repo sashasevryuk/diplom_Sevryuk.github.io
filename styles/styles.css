@@ -47,16 +47,16 @@ body{
 /*Кнопки*/
 .button{
     font-family: "Firasansregular";
-    border: 1px solid #00943f;
+    border: 1px solid #104B83;
     height: 40px;
     box-sizing: border-box;
     border-radius: 10px;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.4px;
-    color: #147E4B;
+    color: #000000;
     padding: 10px 25px 11px 25px;
-    box-shadow: 0 2px 1px 0 #00943F;
+    box-shadow: 0 2px 1px 0 #104B83;
     background-color: #ffffff;
     white-space: nowrap;
 }
@@ -71,13 +71,13 @@ body{
 
 .button:hover, .button:focus{
     outline: none;
-    background-color: #45A73E;
+    background-color: #104B83;
     color: #ffffff;
     box-shadow: none;
 }
 
 .button:active{
-    background-color: #147E4B;
+    background-color: #104B83;
 }
 
 /*Плашки*/
@@ -978,6 +978,15 @@ textarea{
     flex-direction: row;
     justify-content: right;
 }
+
+.test_info_left_number.st{
+    background-color: #FFD940;
+}
+
+.test_info_left_number.st p{
+    color:#000000;
+}
+
 
 .test_info_left_number{
     height: 24px;
