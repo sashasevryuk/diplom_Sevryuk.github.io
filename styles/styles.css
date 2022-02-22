@@ -50,7 +50,8 @@ body{
     border: 1px solid #00943F;
     height: 40px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.4px;
@@ -88,7 +89,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
 }
 
 .plushka_main_content{
