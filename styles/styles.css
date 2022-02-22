@@ -75,6 +75,7 @@ body{
 .button:hover, .button:focus{
     outline: none;
     background-color: #147E4B;
+    border-color: #ffffff;
     color: #ffffff;
     box-shadow: none;
 }
@@ -82,6 +83,22 @@ body{
 .button:active{
     background-color: #147E4B;
 }
+
+.button.bb{
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.button.bb:hover, 
+.button.bb:focus,
+.button.bb:active{
+    outline: none;
+    background-color: #147E4B;
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: none;
+    border-right: 1px solid #ffffff;
+}
+
 
 /*Плашки*/
 .plushka{
@@ -170,7 +187,7 @@ body{
 }
 
 .navigation_menu{
-    padding: 0 0 0 30px;
+    padding: 0 0 0 24px;
 }
 
 .menu_item{
@@ -439,9 +456,10 @@ body{
     height: 35px;
 }
 
+/*
 .logo img{
-    padding-left: 10px;
-}
+    padding-left: 5px;
+}*/
 
 .start_page_title{
     font-family: "Firasansmedium";
