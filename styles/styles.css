@@ -99,6 +99,18 @@ body{
     border-right: 1px solid #ffffff;
 }
 
+.button.bb.mod{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.button.bb.mod:hover, 
+.button.bb.mod:focus,
+.button.bb.mod:active{
+    background-color: #eeeeee;
+    color: #000000;
+}
+
 
 /*Плашки*/
 .plushka{
