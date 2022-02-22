@@ -48,6 +48,7 @@ body{
 .button{
     font-family: "Firasansregular";
     border: 1px solid #00943F;
+    background-color: #00943F;
     height: 40px;
     box-sizing: border-box;
     border-radius: 5px 0 0 5px;
@@ -55,10 +56,11 @@ body{
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.4px;
-    color: #000000;
+    color: #ffffff;
     padding: 10px 25px 11px 25px;
-    box-shadow: 0px 2px 1px #00943F;
-    background-color: #ffffff;
+    cursor: pointer;
+    /*box-shadow: 0px 2px 1px #00943F;*/
+    /*background-color: #ffffff;*/
     white-space: nowrap;
 }
 
@@ -72,13 +74,13 @@ body{
 
 .button:hover, .button:focus{
     outline: none;
-    background-color: #00943F;
+    background-color: #147E4B;
     color: #ffffff;
     box-shadow: none;
 }
 
 .button:active{
-    background-color: #00943F;
+    background-color: #147E4B;
 }
 
 /*Плашки*/
@@ -168,7 +170,7 @@ body{
 }
 
 .navigation_menu{
-    padding: 0 30px;
+    padding: 0 0 0 30px;
 }
 
 .menu_item{
@@ -202,9 +204,13 @@ body{
     letter-spacing: -0.4px;
 }
 
+.item_ico{
+    padding: 4px 0 4px 5px;
+}
+
 .item_ico img{
     height: 40px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 5px;
     padding: 4px;
 }
@@ -250,7 +256,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    z-index: 1;
+    z-index: 2;
 }
 
 .left_part_logo2{
@@ -433,6 +439,10 @@ body{
     height: 35px;
 }
 
+.logo img{
+    padding-left: 10px;
+}
+
 .start_page_title{
     font-family: "Firasansmedium";
     font-weight: 500;
@@ -582,8 +592,14 @@ body{
     border-bottom: 3px solid #147E4B;
     border-top: 3px solid #147E4B;*/
     padding: 4px 0 4px 5px;
-    border-left: 4px solid #104B83;
+    /*border-left: 4px solid #104B83;*/
+    background-color: #eeeeee;
 }
+
+.menu_item.short.active_menu_item{
+    background-color: #eeeeee;
+}
+
 /*
 .active_menu_item{
     padding: 5px 0 5px 0;
@@ -594,8 +610,9 @@ body{
 }
 
 .menu_item.short .active_menu_item{
-    border-left: 4px solid #104B83;
+    /*border-left: 4px solid #104B83;*/
     padding: 4px 0 4px 3px;
+    background-color: #eeeeee;
     /*border-bottom: 3px solid #147E4B;
     border-top: 3px solid #147E4B;
     padding: 4px 0 4px 0;
@@ -607,7 +624,7 @@ body{
 }
 */
 .active_menu_text p{
-    color:#104B83;
+    /*color:#147E4B;*/
 }
 
 /*Главная страница*/
