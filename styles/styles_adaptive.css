@@ -236,7 +236,7 @@
    }
 
    .question_form_buttons{
-       flex-direction: column;
+       flex-direction: column-reverse;
    }
 
    .question_form_buttons button{
