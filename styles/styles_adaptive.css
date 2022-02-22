@@ -405,6 +405,17 @@
     .plushka_button{
         margin-top: 8px;
     }
+
+    .plushka_button button{
+        border-radius: 5px;
+    }
+
+    /*calendar*/
+    .calendar_plashka{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 870px){
@@ -622,13 +633,6 @@
 
     .support_form_item2 label {
         width: 235px;
-    }
-
-    /*calendar*/
-    .calendar_plashka{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
 
