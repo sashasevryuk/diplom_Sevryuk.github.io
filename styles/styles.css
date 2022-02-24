@@ -636,10 +636,12 @@ body{
     padding: 4px 0 4px 5px;
     /*border-left: 4px solid #104B83;*/
     background-color: #eeeeee;
+    border-radius: 5px 0 0 5px;
 }
 
 .menu_item.short.active_menu_item{
     background-color: #eeeeee;
+    border-radius: 5px 0 0 5px;
 }
 
 /*
