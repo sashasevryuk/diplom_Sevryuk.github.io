@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Название учебного материала</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap-reboot.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../styles/styles_adaptive.css" media="screen">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/left_menu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="main_container_left_part block active" id="block1">
+            <div class="left_part_logo">
+                <div class="logo">
+                    <a href="../html_files/start.html"><img src="../images/logotype.png" alt="логотип"></a>
+                </div>
+            </div>
+            <div class="left_part_navigation">
+                <div class="navigation_menu">
+                    <a href="calendar.html">
+                        <div class="menu_item first_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/calendar1.png" alt="расписание">
+                            </div>
+                            <div class="item_text">
+                                <p>Расписание</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="menu_item active menu">
+                            <div class="item_ico active_menu_item">
+                                <img src="../images/materials1.png" alt="учебные материалы">
+                            </div>
+                            <div class="item_text active_menu_text">
+                                <p>Учебные материалы</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="testing.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/testing1.png" alt="тестирование">
+                            </div>
+                            <div class="item_text">
+                                <p>Тестирование</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="results.html">
+                        <div class="menu_item">
+                            <div class="item_ico">
+                                <img src="../images/results1.png" alt="результаты">
+                            </div>
+                            <div class="item_text">
+                                <p>Результаты</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="support.html">
+                        <div class="menu_item last_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/question1.png" alt="поддержка">
+                            </div>
+                            <div class="item_text">
+                                <p>Поддержка</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn btn2" data-num="2">
+                    <img src="../images/hide_menu.png" alt="скрыть меню">
+                </div>
+                <div class="navigation_exit" id="exitBtn">
+                    <div class="exit_ico">
+                        <a href="#"><img src="../images/exit1.png" alt="выход"></a>
+                    </div>
+                    <div class="exit_text">
+                        <a href="#">
+                            <p>Выйти</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_container_left_part2 block" id="block2">
+            <div class="left_part_logo2">
+                <div class="logo">
+                    <a href="../html_files/start.html"><img src="../images/logo.png" alt="логотип"></a>
+                </div>
+            </div>
+            <div class="left_part_navigation">
+                <div class="navigation_menu">
+                    <a href="calendar.html">
+                        <div class="menu_item short first_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/calendar1.png" alt="расписание">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="menu_item short active_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/materials1.png" alt="учебные материалы">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="testing.html">
+                        <div class="menu_item short">
+                            <div class="item_ico">
+                                <img src="../images/testing1.png" alt="тестирование">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="results.html">
+                        <div class="menu_item short">
+                            <div class="item_ico">
+                                <img src="../images/results1.png" alt="результаты">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="support.html">
+                        <div class="menu_item short last_menu_item">
+                            <div class="item_ico">
+                                <img src="../images/question1.png" alt="поддержка">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn btn1" data-num="1">
+                    <img src="../images/hide_menu1.png" alt="скрыть меню">
+                </div>
+                <div class="navigation_exit2" id="exitBtn2">
+                    <div class="exit_ico">
+                        <a href="#"><img src="../images/exit1.png" alt="выход"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Модальное окно выход-->
+        <div id="exitModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal_title">
+                        <p>Вы уверены, что хотите выйти?</p>
+                    </div>
+                    <div class="modal_text">
+                        <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст
+                            рыба</p>
+                    </div>
+                    <div class="modal_buttons">
+                        <div class="modal_button1"><button class="button modal_exit_close_btn bb mod">Отмена</button>
+                        </div>
+                        <div class="modal_button2"> <button class="button bb mod"
+                                onclick="document.location='../index.html'">Да</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_container_right_part">
+            <div class="right_part_navigation">
+                <div class="right_part_name_page">
+                    <div class="name_page_ico">
+                        <a href="./thems_materials.html"><img src="../images/arrow.png" alt="назад"></a>
+                    </div>
+                    <div class="name_page_text">
+                        <p>Название учебного материала</p>
+                    </div>
+                </div>
+                <div class="right_part_pictograms">
+                    <div class="pictograms_item pictograms_item_first">
+                        <a href="#"><img src="../images/search1.png" alt="поиск"></a>
+                    </div>
+                    <div class="pictograms_item">
+                        <a href="#"><img src="../images/notification1.png" alt="уведомления"></a>
+                    </div>
+                    <div class="pictograms_item us">
+                        <a href="user.html"><img src="../images/user3.png" alt="личный кабинет"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right_part_content">
+                <div class="bread">
+                    <p><a href="materials.html">Учебные материалы</a>/<a href="thems_materials.html">Банковское дело</a>/Название учебного материала</p>
+                </div>
+                <div class="right_part_text_area materials">
+                    <h1>Страница находится в процессе разработки</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/preloader.js"></script>
+    <script src="../js/modal_exit.js"></script>
+</body>
+
+</html>
