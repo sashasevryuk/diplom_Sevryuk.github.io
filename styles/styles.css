@@ -59,8 +59,6 @@ body{
     color: #ffffff;
     padding: 10px 25px 11px 25px;
     cursor: pointer;
-    /*box-shadow: 0px 2px 1px #00943F;*/
-    /*background-color: #ffffff;*/
     white-space: nowrap;
 }
 
@@ -110,7 +108,6 @@ body{
     background-color: #eeeeee;
     color: #000000;
 }
-
 
 /*Плашки*/
 .plushka{
@@ -203,7 +200,6 @@ body{
 }
 
 .menu_item{
-    /*height: 40px;*/
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -245,7 +241,6 @@ body{
 }
 
 /*Пункт навигационного меню "Выход"*/
-
 .navigation_exit{
     display: flex;
     flex-direction: row;
@@ -277,11 +272,10 @@ body{
 }
 
 /*уезжающее и выезжающее боковое меню*/
-
 .main_container_left_part2{
     height: 100%;
     width: 100px;
-    box-shadow: 5px 0px 10px 0px rgba(0, 148, 63, 0.1);
+    box-shadow: 5px 0px 10px 0px #EEEEEE;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -339,7 +333,6 @@ body{
 }
 
 /*Правая часть экрана страницы*/
-
 .main_container_right_part{
     height: 100%;
     display: flex;
@@ -437,11 +430,9 @@ body{
     margin: 32px 32px 0 32px;
 }
 
-/**/
 .right_part_text_area.main_page{
     width: auto;
 }
-/**/
 
 /*Стартовая страница*/
 .start_page{
@@ -467,11 +458,6 @@ body{
 .start_page_logo img{
     height: 35px;
 }
-
-/*
-.logo img{
-    padding-left: 5px;
-}*/
 
 .start_page_title{
     font-family: "Firasansmedium";
@@ -506,7 +492,6 @@ body{
 }
 
 /*Страница ошибки 404*/
-
 .mistake404{
     display: flex;
     justify-content: center;
@@ -564,13 +549,11 @@ body{
     padding-right: 32px;
 }
 
-
 .materials_plushka{
     margin-bottom: 16px;
 }
 
 /*Страница результаты*/
-
 .results_title{
     font-family:"Firasansmedium";
     font-weight: 500;
@@ -578,7 +561,6 @@ body{
     line-height: 19px;
     color: #000000;
     padding-bottom: 8px;
-    /*margin-top: 32px;*/
 }
 
 .results_text{
@@ -628,13 +610,7 @@ body{
 
 /*Активные пункты меню и пиктограмы*/
 .menu_item.active.menu{
-/*padding: 5px 0px 5px 5px;
-    background-color: #e6ffcd;*/
-    /*border-radius: 10px;
-    border-bottom: 3px solid #147E4B;
-    border-top: 3px solid #147E4B;*/
     padding: 4px 0 4px 5px;
-    /*border-left: 4px solid #104B83;*/
     background-color: #eeeeee;
     border-radius: 5px 0 0 5px;
 }
@@ -644,33 +620,16 @@ body{
     border-radius: 5px 0 0 5px;
 }
 
-/*
-.active_menu_item{
-    padding: 5px 0 5px 0;
-}
-*/
 .menu_item.short{
     padding-left: 0;
 }
 
 .menu_item.short .active_menu_item{
-    /*border-left: 4px solid #104B83;*/
     padding: 4px 0 4px 3px;
     background-color: #eeeeee;
-    /*border-bottom: 3px solid #147E4B;
-    border-top: 3px solid #147E4B;
-    padding: 4px 0 4px 0;
-    border-radius: 10px;*/
 }
-/*
-.active_menu_item img{
-    /*background-color: #e6ffcd;*
-}
-*/
-
 
 /*Главная страница*/
-
 .main_page_stat{
     display: flex;
     flex-direction: row;
@@ -755,7 +714,6 @@ body{
 }
 
 /*Страница с учебным материалом*/
-
 .name_material_title{
     display: flex;
     flex-direction: row;
@@ -1065,7 +1023,6 @@ textarea{
     color:#000000;
 }
 
-
 .test_info_left_number{
     height: 24px;
     background: #147E4B;
@@ -1360,7 +1317,6 @@ textarea{
 }
 
 /*Модальное окно регистрации и авторизации*/
-
 .modal-content.reg{
     width: 455px;
     height: 691px;
@@ -1792,8 +1748,6 @@ a:hover{
     text-decoration: none;
 }
 
-
-
 /*Центрирование лейблов на формах*/
 label.content_item_text {
     margin-bottom: 0;
@@ -1814,9 +1768,9 @@ label.content_item_text {
     bottom: 0;
     background: #ffffff;
     z-index: 1001;
-  }
+}
 
-  .preloader__row {
+.preloader__row {
     position: relative;
     top: 50%;
     left: 50%;
@@ -1826,9 +1780,9 @@ label.content_item_text {
     margin-left: -35px;
     text-align: center;
     animation: preloader-rotate 2s infinite linear;
-  }
+}
 
-  .preloader__item {
+.preloader__item {
     position: absolute;
     display: inline-block;
     top: 0;
@@ -1837,22 +1791,21 @@ label.content_item_text {
     width: 35px;
     height: 35px;
     animation: preloader-bounce 2s infinite ease-in-out;
-  }
+}
 
-  .preloader__item:last-child {
+.preloader__item:last-child {
     top: auto;
     bottom: 0;
     animation-delay: -1s;
-  }
+}
 
-  @keyframes preloader-rotate {
+@keyframes preloader-rotate {
     100% {
       transform: rotate(360deg);
     }
-  }
+}
 
-  @keyframes preloader-bounce {
-
+ @keyframes preloader-bounce {
     0%,
     100% {
       transform: scale(0);
@@ -1861,13 +1814,13 @@ label.content_item_text {
     50% {
       transform: scale(1);
     }
-  }
+}
 
-  .loaded_hiding .preloader {
+.loaded_hiding .preloader {
     transition: 0.3s opacity;
     opacity: 0;
-  }
+}
 
-  .loaded .preloader {
+.loaded .preloader {
     display: none;
-  }
+}

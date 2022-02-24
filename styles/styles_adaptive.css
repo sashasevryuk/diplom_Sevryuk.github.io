@@ -225,26 +225,26 @@
 
 @media screen and (max-width: 960px){
    /*test.html*/
-   .test_info{
+    .test_info{
        flex-direction: column;
        justify-content: start;
-   }
+    }
 
-   .test_info_right{
+    .test_info_right{
        justify-content: left;
        margin-top: 8px;
-   }
+    }
 
-   .question_form_buttons{
+    .question_form_buttons{
        flex-direction: column-reverse;
-   }
+    }
 
-   .question_form_buttons button{
+    .question_form_buttons button{
        margin-bottom: 8px;
-   }
+    }
 
    /*support*/
-   .support_form_item input, textarea {
+    .support_form_item input, textarea {
         width: 300px;
     }
 
@@ -480,7 +480,6 @@
     .user_header{
         display: flex;
         flex-direction: column;
-        
     }
 
     .user_photo{
@@ -671,14 +670,10 @@
 
 @media screen and (max-width: 730px){
     /*calendar.html*/
-    
-
     .calendar_body_row_item{
         width: 25px;
         height: 40px;
     }
-
-   
 
     .row_item_unactive,
     .calendar_body_row_item{
@@ -697,8 +692,6 @@
         padding-top: 1px;
         font-size: 9px;
     }
-    
-    
 }
     
 @media screen and (max-width: 720px){
@@ -852,12 +845,6 @@
 }
 
 @media screen and (max-width: 600px){
-    /*start.html*/
-    /*.name_page_text{
-        font-size: 12px;
-        line-height: 14px;
-    }*/
-
     .pictograms_item{
         margin-left: 6px;
     }
@@ -885,15 +872,6 @@
         font-size: 11px;
         line-height: 13px;
     }
-}
-@media screen and (max-width: 540px){
-    
-}
-@media screen and (max-width: 510px){
-    
-}
-@media screen and (max-width: 500px){
-    
 }
 
 
