@@ -1826,3 +1826,20 @@ label.content_item_text {
 .loaded .preloader {
     display: none;
 }
+
+.pictograms_item_first input{
+    display: none;
+}
+
+.pictograms_item_first input,
+.pictograms_item_first input:hover,
+.pictograms_item_first input:focus,
+.pictograms_item_first input:active
+{
+    border-bottom: 1px solid #147E4B;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: 0;
+    outline-offset: 0;
+}
