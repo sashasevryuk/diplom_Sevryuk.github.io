@@ -105,6 +105,7 @@ body{
 .button.bb.mod:hover, 
 .button.bb.mod:focus,
 .button.bb.mod:active{
+    border-color: #eeeeee;
     background-color: #eeeeee;
     color: #000000;
 }
