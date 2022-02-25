@@ -435,6 +435,13 @@ body{
     width: auto;
 }
 
+.right_part_text_area .results_title.rez,
+.right_part_text_area .results_text.rez,
+.right_part_text_area .plushka.materials_plushka.rez,
+.right_part_text_area .results_button.rez{
+    margin-right: 32px;
+}
+
 /*Стартовая страница*/
 .start_page{
     display: flex;
