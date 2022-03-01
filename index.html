@@ -26,12 +26,16 @@
             </div>
             <div class="start_page_title">Добро пожаловать!</div>
             <div class="start_page_text">Система обучения и тестирования сотрудников ОАО "АСБ Беларусбанк"
-                <br>поможет вам пройти аттестацию и повысить вашу квалификацию, 
-                <br>а также для потенциальных сотрудников - попасть к нам в штат.</div>
+                <br>поможет вам пройти аттестацию и повысить вашу квалификацию,
+                <br>а также для потенциальных сотрудников - попасть к нам в штат.
+            </div>
             <div class="start_page_buttons">
                 <div class="start_page_button_1" id="regBtn"><button class="button bb">Зарегистрироваться</button></div>
                 <div class="start_page_button_2" id="avtBtn"><button class="button bb">Войти</button></div>
             </div>
+            <div class="ind_help" id="avt_help"><a href="#">
+                    <p>Не получается войти?</p>
+                </a></div>
         </div>
     </div>
     <!--Модальное окно регистрации-->
@@ -42,7 +46,8 @@
                     <p>Форма регистрации</p>
                 </div>
                 <div class="modal_text">
-                    <p>Заполните обязательные поля формы для регистрации в Системе обучения и тестирования сотрудников</p>
+                    <p>Заполните обязательные поля формы для регистрации в Системе обучения и тестирования сотрудников
+                    </p>
                 </div>
                 <div class="modal_form">
                     <form class="modal_form_content" id="form1">
@@ -82,17 +87,20 @@
                         <div class="form_content_item item_check">
                             <input type="checkbox" required>
                             <div>
-                                <p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с <a href="#">правилами и условиями</a> использования сайта *</p>
+                                <p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с <a href="#">правилами и
+                                        условиями</a> использования сайта *</p>
                             </div>
                         </div>
                         <div class="form_content_item item_check">
                             <input type="checkbox">
                             <div>
-                                <p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с условиями <a href="#">Политики конфиденциальности</a> *</p>
+                                <p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с условиями <a
+                                        href="#">Политики конфиденциальности</a> *</p>
                             </div>
                         </div>
                         <div class="modal_buttons">
-                            <div class="modal_button1 regbutton" id="regBtn2"><button type="submit" class="button bb mod"
+                            <div class="modal_button1 regbutton" id="regBtn2"><button type="submit"
+                                    class="button bb mod"
                                     onclick="document.location='html_files/start.html'">Зарегистрироваться</button>
                             </div>
                         </div>
@@ -124,40 +132,57 @@
                         <div class="form_content_item item_check dop_check">
                             <input type="checkbox">
                             <div>
-                                <p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с условиями <a href="#">Политики конфиденциальности</a> *</p>
+                                <p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с условиями <a
+                                        href="#">Политики конфиденциальности</a> *</p>
                             </div>
                         </div>
                         <div class="modal_buttons">
-                            <div class="modal_button1 avtbutton" id="avtBtn2"><button type="submit" class="button bb mod"
+                            <div class="modal_button1 avtbutton" id="avtBtn2"><button type="submit"
+                                    class="button bb mod"
                                     onclick="document.location='html_files/start.html'">Войти</button>
                             </div>
                         </div>
                     </form>
-                    <div class="add_avt">
-                        <a href="#">
-                            <p>Не получается войти?</p>
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
     <!--Модальное окно уведомляющее о успешной регистрации-->
-    <!--<div id="registrationModal2" class="modal">
+    <div id="avt_help_modal" class="modal">
         <div class="modal-content ok_reg">
             <div class="modal-body">
                 <div class="modal_title">
-                    <p>Вы успешно зарегистрировались</p>
+                    <p>Не получается войти?</p>
                 </div>
                 <div class="modal_text">
-                    <p>Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба Текст рыба</p>
+                    <p>Введите адрес электронной почты, на который буду отправлены настройки по восстановлению пароля
+                    </p>
                 </div>
-                <div class="modal_buttons">
-                    <div class="modal_button1 ok_but"><button class="button" onclick="document.location='../html_files/button.html'">Войти</button></div>
+                <div class="modal_form">
+                    <form class="modal_form_content" id="form2">
+                        <div class="form_content_item">
+                            <label class="content_item_text" for="avtEmail">E-mail*</label>
+                            <input type="text" id="avtEmail" required placeholder="ivanov.ivan@gmail.com">
+                        </div>
+                        <div class="modal_buttons">
+                            <div class="modal_button1 avtbutton" id="avtBtn2"><button type="submit"
+                                    class="button bb mod" onclick="document.location='index.html'">Отправить</button>
+                            </div>
+                        </div>
+                        <div class="modal_text_small">
+                            <p>
+                                Если у вас возникли другие проблемы, вы можете связаться со специалистом сервиса
+                                поддержки:
+                                <br><a href="#">+375 (29) 123-45-67</a>
+                                <br><a href="#">e-mail@gmail.com</a>
+                            </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <script src="./js/preloader.js"></script>
     <script src="./js/modal_start.js"></script>
 </body>

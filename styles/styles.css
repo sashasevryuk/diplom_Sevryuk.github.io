@@ -1256,7 +1256,8 @@ textarea{
     animation-duration: 0.4s; 
     display:inline-block; 
     vertical-align:middle; 
-    position:relative
+    position:relative;
+    height: auto;
 }
 
 @-webkit-keyframes animatetop {
@@ -1328,7 +1329,7 @@ textarea{
 /*Модальное окно регистрации и авторизации*/
 .modal-content.reg{
     width: 455px;
-    height: 691px;
+    height: auto;
 }
 
 .modal_form_content{
@@ -1432,8 +1433,8 @@ input:focus:-ms-input-placeholder {
 }
 
 .ok_reg{
-    width: 446px;
-    height: 215px;
+    width: 423px;
+    height: auto;
 }
 
 .ok_but{
@@ -1442,7 +1443,7 @@ input:focus:-ms-input-placeholder {
 
 .modal-content.avt{
     width: 423px;
-    height: 402px;
+    height: auto;
 }
 
 .dop_check{
@@ -1849,4 +1850,45 @@ label.content_item_text {
     border-top: none;
     outline: 0;
     outline-offset: 0;
+}
+
+.ind_help p{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    color: #147E4B;
+    text-decoration: underline;
+}
+
+.ind_help p:hover{
+    text-decoration: none;
+}
+
+
+.modal_text_small p,
+.modal_text_small a{
+    font-family: "Firasansregular";
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    margin: auto;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.modal_text_small a{
+    text-decoration: underline;
+}
+
+.modal_text_small a:hover{
+    text-decoration: none;
+}
+
+.ok_reg .modal_button1{
+    padding-top: 8px;
+}
+
+#avtorizationModal .modal_button1{
+    margin-bottom: 0px;
 }
