@@ -1892,3 +1892,14 @@ label.content_item_text {
 #avtorizationModal .modal_button1{
     margin-bottom: 0px;
 }
+
+.a_link_sup{
+    color: #147E4B;
+    text-decoration: underline;
+}
+
+.a_link_sup:hover{
+    color: #147E4B;
+    text-decoration: none;
+}
+
