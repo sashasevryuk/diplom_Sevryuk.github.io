@@ -161,7 +161,8 @@
                         <p>Нажимая кнопку "Да", вы покидаете даннную страницу и выходите из личного кабинета</p>
                     </div>
                     <div class="modal_buttons">
-                        <div class="modal_button1"><button class="button modal_exit_close_btn bb mod">Отмена</button></div>
+                        <div class="modal_button1"><button class="button modal_exit_close_btn bb mod">Отмена</button>
+                        </div>
                         <div class="modal_button2"> <button class="button bb mod"
                                 onclick="document.location='../index.html'">Да</button></div>
                     </div>
@@ -261,32 +262,34 @@
                     <div id="content_events" class="tabcontent">
                         <div class="support_container">
                             <div class="support_txt">
-                                <p>Если у вас возникли вопросы или сложности в использовании системы, пожалуйста, воспользуйтесь формой обратной связи расположенной ниже
+                                <p>Если у вас возникли вопросы или сложности в использовании системы, пожалуйста,
+                                    воспользуйтесь формой обратной связи расположенной ниже
                                 </p>
                             </div>
                             <div class="support">
-                                <form class="support_form">
+                                <form class="support_form" id="form" name="form">
                                     <div class="support_form_item">
                                         <label for="support_ima">Имя*</label>
-                                        <input type="text" id="support_ima" required>
+                                        <input type="text" id="support_ima" name="support_ima" data-reg="^[А-ЯЁ][а-яё]*$">
                                     </div>
                                     <div class="support_form_item">
                                         <label for="support_email">E-mail*</label>
-                                        <input type="text" id="support_email" required>
+                                        <input type="text" id="support_email" name="support_email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
                                     </div>
                                     <div class="support_form_item">
                                         <label for="support_phone">Телефон*</label>
-                                        <input type="text" id="support_phone" required>
+                                        <input type="text" id="support_phone" name="support_phone" data-reg="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$">
                                     </div>
                                     <div class="support_form_item textarea">
                                         <label for="support_message">Текст сообщения*</label>
-                                        <textarea id="support_message" required></textarea>
+                                        <textarea id="support_message" name="support_message" required></textarea>
                                     </div>
                                     <div class="support_form_item1">
                                         <label class="label_files">Файлы</label>
                                         <div class="form-group">
                                             <label class="label">
-                                                <img class="support_form_icon" src="../images/attach_icon.png" alt="Загрузка файлов">
+                                                <img class="support_form_icon" src="../images/attach_icon.png"
+                                                    alt="Загрузка файлов">
                                                 <span class="support_form_title">Для загрузки файлов нажмите
                                                     сюда</span>
                                                 <input type="file">
@@ -294,11 +297,14 @@
                                         </div>
                                     </div>
                                     <div class="support_form_item2">
-                                        <input type="checkbox" id="support_checkbox" required>
-                                        <label for="support_checkbox"><p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с условиями <a class="a_link_sup" href="#">Политики конфиденциальности</a> *</p></label>
+                                        <input type="checkbox" id="support_checkbox" name="support_checkbox" required>
+                                        <label for="support_checkbox">
+                                            <p>Настоящим подтверждаю, что я ознакомлен(а) и согласен(а) с условиями <a
+                                                    class="a_link_sup" href="#">Политики конфиденциальности</a> *</p>
+                                        </label>
                                     </div>
                                     <div class="support_button"><button class="button bb" id="supportBtn"
-                                            onclick="document.location='#'">Отправить</button></div>
+                                            name="supportBtn">Отправить</button></div>
                                 </form>
                             </div>
                         </div>
@@ -315,7 +321,8 @@
                                     </div>
                                     <div class="modal_buttons">
                                         <div class="modal_button1 support"><button
-                                                class="button modal_support_close_btn bb mod">Продолжить работу</button></div>
+                                                class="button modal_support_close_btn bb mod">Продолжить работу</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -325,6 +332,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/validation.js"></script>
     <script src="../js/preloader.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/modal_support.js"></script>
