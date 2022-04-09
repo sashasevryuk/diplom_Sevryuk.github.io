@@ -780,7 +780,7 @@
     /*test.html*/
     .test_info_left_number p{
         font-size: 12px;
-        font-weight: 14px;
+        line-height: 14px;
     }
 
     /*calendar.html*/
