@@ -1450,7 +1450,7 @@ input:focus:-ms-input-placeholder {
     padding: 0 8px 24px 32px;
 }
 
-#avtBtn2{
+#avtBtn2, #avtBtn21{
     padding-right: 0;
     margin-bottom: 24px;
 }
